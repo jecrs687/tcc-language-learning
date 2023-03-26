@@ -50,26 +50,44 @@ Spaced Repetition System (SRS), para induzir que em situações futuras o usuár
 consiga se adequar melhor a cada cenário de acordo com o seu repertório atual. Seguindo este viés é possível aferir que o usuário teria uma melhor experiência ao assistir filmes ou até
 mesmo vídeos com o propósito de adquirir conhecimento de uma nova língua.
 \\
+
 \textbf{Palavras chaves:} aprendizado de línguas, gamificação, plataformas de streaming, legendas, SRS
 \end{resumo}
 
 
 \section{Introdução}
-Aprender uma nova língua é uma tarefa importante e pode trazer muitos benefícios para o indivíduo, no entanto, nem sempre é uma tarefa fácil e desafiadora. Muitas vezes, a falta de disposição e conforto do usuário pode dificultar o aprendizado. Para superar esse obstáculo, o presente projeto visa gamificar o aprendizado de novas línguas, tornando-o menos exaustivo e mais prazeroso.\\
-O projeto consiste na criação de uma extensão para navegadores que irá interagir com sites de streamings quando os usuários estiverem assistindo filmes com legendas. A extensão irá identificar as palavras mais comuns na legenda e aplicar técnicas de Spaced Repetition System (SRS), com o objetivo de ajudar o usuário a aprender a nova língua de forma gamificada.\\
-Estudos demonstram que alunos tendem a ter o dobro da velocidade de aquisição de uma nova língua utilizando um mecanismo de aprendizado semelhante chamado de smart subtitle \cite{Kovacs13}, desse modo é viável inferir que abordagens com plataformas de entreternimento também podem ser efetivas para o aprendizado, em especial, utilizando a legenda de plataformas. \\
-A metodologia adotada para o desenvolvimento da extensão será baseada em pesquisas sobre o processo de aprendizado de novas línguas, bem como em técnicas de gamificação. A organização do projeto será feita em etapas, começando pela pesquisa e seguindo para o desenvolvimento da extensão, sua validação e testes.\\
+
+Aprender uma nova língua é uma tarefa importante e pode trazer muitos benefícios para o indivíduo, no entanto, nem sempre é uma tarefa fácil e desafiadora. Muitas vezes, a falta de disposição e conforto do usuário pode dificultar o aprendizado. Para superar esse obstáculo, o presente projeto visa gamificar o aprendizado de novas línguas, tornando-o menos exaustivo e mais prazeroso.
+
+O projeto consiste na criação de uma extensão para navegadores que irá interagir com sites de streamings quando os usuários estiverem assistindo filmes com legendas. A extensão irá identificar as palavras mais comuns na legenda e aplicar técnicas de Spaced Repetition System (SRS), com o objetivo de ajudar o usuário a aprender a nova língua de forma gamificada.
+
+Estudos demonstram que alunos tendem a ter o dobro da velocidade de aquisição de uma nova língua utilizando um mecanismo de aprendizado semelhante chamado de smart subtitle \cite{Kovacs13}, desse modo é viável inferir que abordagens com plataformas de entreternimento também podem ser efetivas para o aprendizado, em especial, utilizando a legenda de plataformas. 
+
+A metodologia adotada para o desenvolvimento da extensão será baseada em pesquisas sobre o processo de aprendizado de novas línguas, bem como em técnicas de gamificação. A organização do projeto será feita em etapas, começando pela pesquisa e seguindo para o desenvolvimento da extensão, sua validação e testes.
+
 O objetivo principal deste projeto é oferecer uma solução para tornar o aprendizado de novas línguas mais fácil e agradável para o usuário, permitindo-lhe aproveitar o tempo livre para adquirir conhecimento de uma nova língua de forma lúdica e eficaz. Ao final deste projeto, espera-se que o usuário tenha uma melhor compreensão da nova língua, o que poderá ser verificado por meio de avaliações e feedbacks dos usuários.
 
 \subsection{Motivação}
-A motivação para esse projeto surge da necessidade de encontrar alternativas para tornar o processo de aprendizado de uma nova língua mais interessante e eficiente. Atualmente, o método convencional de aprendizado de línguas pode ser cansativo e desmotivador para muitos estudantes. \\
-Com a criação de uma extensão para navegadores que permita a interação com sites de streamings de filmes, o aprendizado da nova língua pode ser feito de maneira mais natural e lúdica, assim como ferramentas que traduzem páginas web para facilitar o aprendizado ou compreensão de outras línguas já presentes no mercado ou na área de pesquisa \cite{ElBatanony21}.\\
+A motivação para esse projeto surge da necessidade de encontrar alternativas para tornar o processo de aprendizado de uma nova língua mais interessante e eficiente. Atualmente, o método convencional de aprendizado de línguas pode ser cansativo e desmotivador para muitos estudantes. 
+
+Com a criação de uma extensão para navegadores que permita a interação com sites de streamings de filmes, o aprendizado da nova língua pode ser feito de maneira mais natural e lúdica, assim como ferramentas que traduzem páginas web para facilitar o aprendizado ou compreensão de outras línguas já presentes no mercado ou na área de pesquisa \cite{ElBatanony21}.
+
 Ao assistir filmes com áudio e legendas na língua original, o usuário pode aprender de forma não-intrusiva, ao mesmo tempo em que aplica técnicas gamificadas de SRS para fixar as novas palavras na memória. A motivação para esse projeto é fornecer uma alternativa eficiente e atrativa para o aprendizado de novas línguas.
+
+\subsection{Referencial Teórico}
+Nos últimos anos, tem havido um crescente interesse no uso de vídeos legendados como uma forma de auxiliar no aprendizado de línguas estrangeiras. No entanto, as legendas padrão não são ideais para aquisição de vocabulário, já que as traduções são não literais e são fornecidas apenas para frases, e não para palavras individuais. Para superar esse problema, foram desenvolvidas as "Smart Subtitles", que são legendas interativas voltadas para a aquisição de vocabulário. As "Smart Subtitles" incluem recursos como definições de vocabulário ao passar o cursor do mouse, e navegação no vídeo com base no diálogo \cite{Kovacs13} Estudos mostraram que os alunos aprendem mais do que o dobro do vocabulário com as "Smart Subtitles" do que com as legendas duplas chinês-inglês, com níveis semelhantes de compreensão e satisfação \cite{Kovacs14}.
+
+Outra abordagem para auxiliar no aprendizado de línguas estrangeiras é o uso de extensões de navegador. A extensão do navegador "InteractiveSubtitle" \cite{ElBatanony21} é um exemplo disso. A extensão apresenta recursos como aprendizado personalizado, tradução de frases no contexto em páginas da web e suporte a mais de 100 idiomas. O objetivo é utilizar várias hipóteses de aquisição de língua estrangeira para criar uma nova ferramenta de aprendizado de língua, que seja mais eficaz.
+
+Com base nessas ideias, fora proposta uma extensão de navegador que utiliza "Smart Subtitles" para treinar usuários através de uma prática gamificada antes de assistir a um filme legendado em uma língua que eles estão aprendendo. A extensão pode tem como objetivo também incluir recursos como exercícios interativos para reforçar a aquisição de vocabulário e jogos para ajudar os usuários a praticar as habilidades de audição e leitura. A extensão será personalizada para o nível e interesses do usuário, fornecendo um ambiente de aprendizado interativo e envolvente.
+O aprendizado b\cite{10.1145/2939672.2939850}, \cite{10.1145/3534678.3539081}
 
 \subsection{Objetivo Geral}
 
-O objetivo geral deste projeto é desenvolver uma extensão para navegadores que permita aos usuários aprender uma nova língua ou aumentar seu vocabulário de forma gamificada e interativa. A extensão será projetada para interagir com sites de streamings de filmes, aproveitando as legendas disponíveis nesses sites para auxiliar no processo de ensino. \\ 
-O projeto baseia-se na premissa de que é possível aprender uma nova língua com maior eficiência e satisfação quando o processo é feito de forma gamificada e interativa. Além disso, tem base em uma metodologia semelhante - smart subtitles - que possui efetividade na ampliação do vocabulário \cite{Kovacs14}. \\ 
+O objetivo geral deste projeto é desenvolver uma extensão para navegadores que permita aos usuários aprender uma nova língua ou aumentar seu vocabulário de forma gamificada e interativa. A extensão será projetada para interagir com sites de streamings de filmes, aproveitando as legendas disponíveis nesses sites para auxiliar no processo de ensino. 
+
+O projeto baseia-se na premissa de que é possível aprender uma nova língua com maior eficiência e satisfação quando o processo é feito de forma gamificada e interativa. Além disso, tem base em uma metodologia semelhante - smart subtitles - que possui efetividade na ampliação do vocabulário \cite{Kovacs14}. 
+
 Desta forma, o objetivo é oferecer uma abordagem diferente e eficiente para utilizar legendas de modo em que as pessoas possam aprender novas línguas e aumentar seu vocabulário de forma descontraída e efetiva enquanto assistem a seus filmes favoritos.
 
 \subsection{Objetivos Específicos}
@@ -88,11 +106,26 @@ Para atender ao objetivo geral serão realizados os seguintes objetivos específ
 
 
 \section{Desenvolvimento}
+O projeto irá utilizar as técnicas utilizadas por \cite{ElBatanony21} em seu artigo A browser extension to facilitate language acquisition tornando assim o inicio do desenvolvimento um caso de estudo do seu artigo, vendo a abordagem que fora utilizada por ele para criar uma extensão de forma a interagir com páginas web. Ademais, o percurso do projeto também terá bases nos artigo \cite{Kovacs14} que utiliza como base a premissa de legendas para defender uma forma de aprendizado mais lúdica e imersiva. Demonstrando assim o potencial de abordagens deste gênero para tal assim como exemplicaficado que abordagens mais lúdicas e inteligentes influênciam diretamente no aprendizado de novas palavras assim apresentados através da figura-\ref{fig:my_label}.
+
+\begin{figure}
+    \centering
+    \caption{Graficos de aprendizado de novas palavras utilizando duas legendas e smart subtitles}
+    \label{fig:my_label}
+    \includegraphics[width=.7\textwidth]{image.png}
+\end{figure}
+
+
+
+
+
 \subsection{Metodologia}
 A metodologia a ser utilizada neste projeto consistirá na criação de uma extensão para navegadores que irá interagir com sites de streamings de filmes e extrair as legendas disponíveis nesses sites. A extensão utilizará técnicas de Spaced Repetition System (SRS) para gamificar o processo de aprendizado de novas línguas, baseado na premissa de que o conhecimento das palavras-chave ou as mais repetidas permite compreender um texto. 
-\\
+
+
 A extensão exibirá as palavras-chave durante a exibição do filme e utilizará técnicas de SRS para repetir as palavras de forma espaçada, com o objetivo de fixá-las na memória do usuário. Além disso, a extensão irá fornecer a tradução dessas palavras para a língua do usuário, para facilitar a compreensão.
-\\
+
+
 O desenvolvimento da extensão será feito com base nas seguintes etapas:
 \begin{itemize}
 \item Identificação dos sites de streamings que possuem legendas disponíveis para os filmes.
@@ -104,6 +137,9 @@ O desenvolvimento da extensão será feito com base nas seguintes etapas:
 Ao final do projeto, espera-se ter uma extensão que possibilite aos usuários aprender novas línguas de forma mais eficiente e agradável, tornando o processo menos exaustivo e aumentando a disposição do usuário para o aprendizado.
 
 \subsection{Atividades Chaves e Cronograma do Projeto}
+
+Para definir o período de execução foi utilizada métricas de implementação do software, criado um backlog e adquado o período de desenvolvimento com o tempo disponível pelo discente  \author{J. Emanuel Cascone R. S.}.
+
 \subsubsection{Atividades Chaves}
 
 A lista das atividades propostas é dada abaixo; cada atividade é transportada para o cronograma que é detalhado na Tabela-\ref{tab:exTable1}.
@@ -125,7 +161,7 @@ A lista das atividades propostas é dada abaixo; cada atividade é transportada 
 \centering
 \caption{Cronograma para o desenvolvimento do projeto }
 \label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
+\includegraphics[width=.7\textwidth]{table.png}
 \end{table}
 
 \subsubsection{Cronograma do Projeto e atividades subjacentes}
@@ -169,13 +205,25 @@ A lista das atividades propostas é dada abaixo; cada atividade é transportada 
 \item Elaboração da documentação técnica da extensão.
 \end{itemize}
 
+
 \item Dezembro de 2023:
 \begin{itemize}
 \item Entrega do projeto final.
 \end{itemize}
 
 \end{itemize}
+\section{Resultados esperados}
 
+
+O principal resultado esperado deste projeto é a criação de uma extensão para navegadores que permita gamificar o aprendizado de novas línguas. Essa extensão irá interagir com sites de streamings de filmes, identificar as palavras mais comuns nas legendas e aplicar técnicas de Spaced Repetition System (SRS) para ajudar o usuário a aprender a nova língua de forma gamificada.
+
+Espera-se que a extensão criada seja eficiente no processo de aprendizado de novas línguas, tornando-o mais prazeroso e eficaz. O projeto também espera fornecer um método alternativo e inovador de aprendizado de novas línguas, que pode ser mais atraente para muitos estudantes em comparação com os métodos convencionais.
+
+Outro resultado esperado deste projeto é contribuir para a pesquisa em gamificação do aprendizado de línguas, fornecendo dados empíricos sobre a eficácia da abordagem proposta. Espera-se que os resultados obtidos possam ser úteis para outros pesquisadores interessados nessa área de estudo.
+
+Além disso, espera-se que a extensão desenvolvida possa ser útil para uma ampla variedade de usuários, incluindo estudantes, professores, profissionais de diferentes áreas e pessoas que estejam em busca de aprender uma nova língua para fins pessoais.
+
+Por fim, espera-se que o projeto possa despertar o interesse de empresas e investidores em potencial, interessados em explorar a gamificação do aprendizado de línguas em plataformas de streaming, bem como em outras áreas de aplicação.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
