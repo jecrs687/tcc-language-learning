@@ -53,19 +53,21 @@ To illustrate this, we notice that the current learning method creates a massive
 This project aims to develop an application that allows users to learn a new language or expand their vocabulary in a gamified and interactive manner. The extension will be designed to interact with movie streaming sites, leveraging the available subtitles on these sites to aid in the teaching process. \\
 The project is based on the premise that learning a new language more efficiently and satisfactorily is possible when gamified and interactive. Additionally, it is based on a similar methodology - smart subtitles - which has been effective in expanding vocabulary \cite{Kovacs14}. \\
 Thus, the goal is to offer a different and efficient approach to using subtitles so that people can learn new languages and expand their vocabulary while watching their favorite movies in a relaxed and effective way.
-\subsection{Specific Objectives}
 
-The specific objectives of this project are as follows:
-\begin{itemize}
-\item A browser extension, a site, and an app environment that could be installed/accessed by users interested in learning new languages.
-\item A browser extension, a site, and an app that interacts with movie streaming sites to access the subtitles of watched films.
-\item Create a keyword database for each learned language and store user information, including their progression in learning.
-\item Translate the keywords into the user's language to aid comprehension.
-\item Apply gamified Spaced Repetition System (SRS) techniques to help users memorize keywords in their new language.
-\item Allow users to choose the language they want to learn.
-\item Offer statistics on user progress, including the most challenging word, the total words learned, and others to help the user understand their learning process.
-\item Provide support for multiple languages, allowing users to learn a wide range of languages using AI.
-\end{itemize}
+\subsection{Specific Objectives}
+The project aims to achieve the following specific objectives:
+
+\begin{enumerate}
+\item Develop browser extensions, a website, and an application accessible to users interested in language learning.
+\item Implement functionality in the browser extensions, website, and application to interact seamlessly with streaming platforms for accessing subtitles.
+\item Establish and maintain a comprehensive database of keywords for each target language, alongside user progression tracking.
+\item Provide translation services for keywords, aiding users in comprehension.
+\item Utilize gamified Spaced Repetition System (SRS) techniques to facilitate the memorization of new vocabulary.
+\item Enable users to select their preferred language for learning.
+\item Offer detailed progress statistics to users, including metrics such as the most challenging words and total words learned.
+\item Support multiple languages through AI integration, providing a diverse learning experience.
+\end{enumerate}
+
 
 \section{Methodology}
 To achieve the project's objectives, on this article we followed a methodology based on the following steps:
@@ -120,9 +122,7 @@ Based on the project's objectives and the methodology used, we identified the fo
 
 \subsubsection{Approach to Goal Attainment}
 
-The development process for the extension, site, and app involves distinct steps to achieve the overarching goal. While some steps are common across all environments, each has its unique set of tasks to accomplish the goal.
-
-
+The development process for the extension, site, and app involves distinct steps to achieve the overarching goal. While some steps are common across all environments, each has its unique set of tasks to accomplish the goal. \\
 The development of the extension was based on the following requisites:  
 \begin{enumerate}
 \item Identification of streaming sites with available subtitles for movies.
@@ -195,7 +195,7 @@ The technologies were chosen based on the need to create a fast and efficient ap
 Context Diagram for the application
 }
 \label{fig:context_diagram}
-\includegraphics[width=0.6\textwidth]{assets/4.png}
+\includegraphics[width=0.65\textwidth]{assets/4.png}
 \end{figure}
 At this point of the project, an environment to learn a new language was built, including a browser extension, a site, and an app, all integrated and working together to provide a better. The diagram provided in Figure-\ref{fig:database_diagram} illustrates the intricate structure of the database employed in this project. It meticulously outlines the relationships between various tables, providing a comprehensive overview of how user data and language information are organized and interconnected within the system for the user. \\
 \begin{figure}[!h]
@@ -236,7 +236,7 @@ The module of site has a interface that adjust to the user's device. The site is
    Initial site interface for the user with the languages, movies, and started movies.
     }
    \label{fig:site1}
-   \includegraphics[width=0.5\textwidth]{assets/20.png}
+   \includegraphics[width=0.67\textwidth]{assets/20.png}
   \end{figure}
 
   \begin{figure}[!h]
@@ -245,7 +245,7 @@ The module of site has a interface that adjust to the user's device. The site is
     A list of languages that the user can learn. 
     }
     \label{fig:site2}
-    \includegraphics[width=0.475\textwidth]{assets/21.png}
+    \includegraphics[width=0.67\textwidth]{assets/21.png}
   \end{figure}
 
     \begin{figure}[!h]
@@ -254,7 +254,7 @@ The module of site has a interface that adjust to the user's device. The site is
       The user profile with progress for each language.
       }
       \label{fig:site3}
-      \includegraphics[width=0.475\textwidth]{assets/22.png}
+      \includegraphics[width=0.67\textwidth]{assets/22.png}
     \end{figure}
 
     \begin{figure}[!h]
@@ -263,7 +263,7 @@ The module of site has a interface that adjust to the user's device. The site is
       A list of languages when the user selects a language to learn.
       }
       \label{fig:site4}
-      \includegraphics[width=0.475\textwidth]{assets/25.png}
+      \includegraphics[width=0.55\textwidth]{assets/25.png}
     \end{figure}
 
     \begin{figure}[!h]
@@ -272,7 +272,7 @@ The module of site has a interface that adjust to the user's device. The site is
       The possible games that the user can play.
       }
       \label{fig:site5}
-      \includegraphics[width=0.475\textwidth]{assets/5.png}
+      \includegraphics[width=0.55\textwidth]{assets/5.png}
     \end{figure}
 
 
@@ -371,7 +371,7 @@ This module is used by the app, but also used on the pop-up of the extension. Th
      List of languages and movies inside iframe on the app.
     }
     \label{fig:app2}
-    \includegraphics[width=0.5\textwidth]{assets/15.png}
+    \includegraphics[width=0.32\textwidth]{assets/15.png}
   \end{figure}
   
   \begin{figure}[!h]
@@ -439,6 +439,7 @@ Currently, the repertoire of sites is really small that the extension could comu
 Also is important create a websocket to extract informations of the site, considering that some streaming use another technology to show get the subtitles. \\
 Considering that is possible create communications between extensions or sites, a discussion about the possibility to integrate with others tools like Language Reactor, is viable.
 
+
 \subsubsection{Site}
 The site is the core of the application, and is necessary to improve the user experience and make it more responsive. The site will be expanded to include new features like interactive exercises and games to reinforce vocabulary acquisition. \\
 About the games, is necessary to create a better interface and improve the user experience. Because the games are the part visible of the core of the learning process, and the user needs to have a good experience to continue using the application. The site was created without a professional designer, and games are the part that needs more attention about design. \\
@@ -446,25 +447,30 @@ And the entire site needs to be more responsive and fast, and the user can under
 Levels, interests and other user information are not being used to improve the user experience, and the site needs to be customized to the user's level and interests, providing an interactive and engaging learning environment. \\
 The last part about UX is the current language of the site, that is not possible change the site language, and is a relevant part to improve the user experience. \\
 More about technological is interesting associate the site with the websockets also, and create new channels to communicate with mobile and notify the user to study like a reminder. 
-
 \subsubsection{App}
 The app will be improved to capture device information and send it to the iframe to turn it more responsible and fast. This possibilitate sends to the backend those informations and create a dashboard or extract to discovery the user behavior and how improve it. \\
-The channel to communicate with the site to possibilitate configure notifications is also a important feature, because a huge part of the users use the app to study, and the app needs to remember the user to do this. \\
+The channel to communicate with the site to possibilitate configure notifications is also a important feature, because a huge part of the users use the app to study, and the app needs to remember the user to do this. 
 \subsubsection{Backend} 
 On the backend, the API routers will be improved using workers because the data will be extensive, and the app and site will be faster and more responsive. \\
 Some API routers will be improved using workers because the data will be extensive, and the app and site will be faster and more responsive. \\
 As the data of each word is a complex processing a solution is build routines to run at night that will recalculate the user progress and the word level based on the results of all users.
 Another important part is the language manager, that will be changed using only the language name, not the language code. \\
-And the last part is the web sockets, that will be created to improve communication between the extension and the site, and the site and the app. \\
+And the last part is the web sockets, that will be created to improve communication between the extension and the site, and the site and the app. 
 
 \subsection{AI}
 The AI of choice is the gpt-3.5-turbo-1106 model developed by OpenAI, incurring costs of \$0.0010 per 1K tokens of input and \$0.0020 per 1K tokens of output. The goal is to reduce costs. Enhance project performance and stabilize monthly payments by leveraging proprietary AI technology. Considering the adoption of Smaug-72B-v0.1, an advanced open AI model known for surpassing the capabilities of my current paid AI solution. The transition to utilizing in-house AI will occur when it becomes more advantageous than relying on third-party APIs.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
-
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill 
 \centering
-\break
 
 \begin{tabular}{@{}p{.5in}p{4in}@{}}
 & \hrulefill \\
