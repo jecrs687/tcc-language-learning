@@ -34,13 +34,10 @@
 \section{Introduction} 
 
 
-Mastering a new language is undeniably valuable, yet it's often accompanied by challenges such as waning motivation and a sense of discomfort. What if there was a way to transform language acquisition into an engaging and less taxing experience? Imagine users effortlessly learning while enjoying themselves. \\
-Streaming platforms have become a ubiquitous source of entertainment, with countless individuals tuning in for movies and series. The project related here exemplifies a harmonious blend of entertainment and education, offering users the opportunity to learn a new language while immersing themselves in movies featuring original audio and subtitles. \\
-The project consists of creating an environment using modern technologies that will possibly install a browser extension and interact with streaming sites when users watch movies with subtitles. The extension will identify the most common words in the subtitles and apply Spaced Repetition System (SRS) techniques to help the user learn the new language in a gamified manner. \\ 
-Also, after watching the movie, the user can access a site or the extension by himself or download the app and continue training the words from the streaming platform. The objective is to possibilitate study in each device using the user information. \\ 
+Mastering a new language is undeniably valuable, yet it's often accompanied by challenges such as waning motivation and a sense of discomfort. What if there was a way to transform language acquisition into an engaging and less taxing experience? Imagine users effortlessly learning while enjoying themselves. 
+Im parallel watch movies and series are a common activity and really enjoyable, streaming platforms have become a popular source of entertainment. Because that a huge amount of people use those platforms to train or learn a new language using subtitles and audio.
 Studies demonstrate that students acquire a new language at double the speed using a similar learning mechanism called smart subtitles \cite{Kovacs13}. Thus, it is feasible to infer that approaches involving entertainment platforms can also be practical for learning, especially when utilizing subtitles from these platforms. \\
-The methodology adopted for the development is based on research on the process of learning new languages, as well as gamification techniques. The project will be organized into stages, starting with research and developing each environment(mobile, extension, site) and integrating those to work together. \\
-The main objective of this project is to create a solution with well-known technologies and an excellent structure to make learning new languages more effortless and more enjoyable for the user, allowing them to utilize their free time to acquire knowledge of a new language playfully and effectively.
+The fusion of these concepts has the potential to help language learning, making it more engaging and less taxing. This project aims to create an application that allows users to learn a new language or expand their vocabulary in a gamified and interactive manner.
 
 \subsection{Motivation}
 The motivation arises from the need to find alternatives to make learning a new language more exciting and efficient. The conventional language learning method can be tiresome and demotivating for many students. \\
@@ -85,7 +82,48 @@ Additionally, the project's path is also based on the articles by Kovács et al.
 The project utilizes techniques used by El Batanony et al. in their article "A browser extension to facilitate language acquisition" \cite{ElBatanony21}, making the beginning of the development a case study of their article, observing the approach they used to create an extension that interacts with web pages.  \\
 It also takes examples of big companies like Duolingo, Memrise, Busuu, Lingoda, Drops, and especially Language Reactor, which uses a similar approach to the project but with a different focus.  \\
 Using Spaced Repetition System (SRS) techniques to gamify learning new languages based on the premise that knowledge of keywords or the most repeated ones allows for text comprehension. \\
-The development of the extension was based on the following steps: 
+
+\subsection{Key Requirements}
+
+To meet the project's objectives, a comprehensive list of activities was undertaken. The project's development was segmented into various stages, each following a logical progression towards finalizing the requirement list. Different steps were identified for each environment.
+
+\subsubsection{List of Requirements}
+
+Based on the project's objectives and the methodology used, we identified the following requirements for create a prototype:
+
+\begin{itemize}
+\item Research and study of documentation on browser extensions, sites, and apps.
+\item Study of possibilities for user training and important data for capture and storage.
+\item Start of architecture definition and choice of technology to be used.
+\item Start of creation of the extension's graphical interface.
+\item Conduct a literature review and gather references for similar projects or theoretical foundations.
+\item Development of logic for capturing and displaying subtitles from streaming sites.
+\item Data analysis and study of possibilities for user training and important data for capture and storage.
+\item Testing and improvement of subtitle capture.
+\item Development of teaching logic based on captured subtitles.
+\item Integration of subtitle capture and teaching logic.
+\item Testing and improvement of teaching logic.
+\item Integration of subtitle capture and teaching logic.
+\item Final testing of the extension.
+\item Review and correction of any issues identified in final testing.
+\item Preparation of technical documentation for the script 
+\item Finalized script and teaching logic.
+\item Creation of the site's graphical interface.
+\item Creation of the app. 
+\item Graphic adaptation.
+\item Refactoring of the application and initiation of mini-games creation.
+\item Technical adjustments.
+\item Bug fixing and improvements.
+\item Final testing and delivery of the project.
+\item MVP (Minimum Viable Product) delivery.
+\end {itemize}
+
+\subsubsection{Approach to Goal Attainment}
+
+The development process for the extension, site, and app involves distinct steps to achieve the overarching goal. While some steps are common across all environments, each has its unique set of tasks to accomplish the goal.
+
+
+The development of the extension was based on the following requisites:  
 \begin{enumerate}
 \item Identification of streaming sites with available subtitles for movies.
 \item Development of a subtitle extraction tool.
@@ -116,40 +154,6 @@ The app:
 \item Create a way to store site information.
 \end{enumerate}
 
-\subsection{Key Activities and Project Schedule}
-
-Software implementation metrics were used to define the execution period, a backlog was created, and the development period was adapted to the time available to the student \author{J. Emanuel Cascone R. S.}.
-
-\subsubsection{Key Activities}
-
-The list of proposed activities is given below.
-
-\begin{itemize}
-\item Research and study of documentation on browser extensions, sites, and apps.
-\item Study of possibilities for user training and important data for capture and storage.
-\item Start of architecture definition and choice of technology to be used.
-\item Start of creation of the extension's graphical interface.
-\item Conduct a literature review and gather references for similar projects or theoretical foundations.
-\item Development of logic for capturing and displaying subtitles from streaming sites.
-\item Data analysis and study of possibilities for user training and important data for capture and storage.
-\item Testing and improvement of subtitle capture.
-\item Development of teaching logic based on captured subtitles.
-\item Integration of subtitle capture and teaching logic.
-\item Testing and improvement of teaching logic.
-\item Integration of subtitle capture and teaching logic.
-\item Final testing of the extension.
-\item Review and correction of any issues identified in final testing.
-\item Preparation of technical documentation for the script 
-\item Finalized script and teaching logic.
-\item Creation of the site's graphical interface.
-\item Creation of the app. 
-\item Graphic adaptation.
-\item Refactoring of the application and initiation of mini-games creation.
-\item Technical adjustments.
-\item Bug fixing and improvements.
-\item Final testing and delivery of the project.
-\item MVP (Minimum Viable Product) delivery.
-\end {itemize}
 
 \subsection{Difficulties and Challenges}
 The main difficulties and challenges encountered during the project's development were related to integrating the extension with streaming sites and developing the teaching logic based on captured subtitles. The extension's integration with streaming sites required using the browser's internal messaging services, a new and complex feature to work with. Developing the teaching logic was also challenging, as it needed to use Spaced Repetition System (SRS) techniques to gamify learning new languages. This requires a deep understanding of SRS techniques, which data was necessary to store, and how to store it. \\
