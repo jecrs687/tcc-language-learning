@@ -28,7 +28,7 @@
   The ability to learn a new language is directly related to the user's disposition and comfort for better interaction with learning platforms. This allows for the gamification of language learning, making it less exhausting. Learning a new language typically starts with writing, reading, listening, and speaking. This project was the creation of a product to facilitate language learning by using a movie streaming platform with subtitles, allowing users to watch movies with the original audio and subtitles and focus on keywords or frequently repeated words for better comprehension. The project is based on the premise that to understand a text, you don't necessarily need to know the whole formation but rather just the keywords or most repeated words, allowing you to apply skimming and scanning techniques. To record these words in the user's memory, gamified forms of Spaced Repetition System (SRS) can be applied to induce the user to better adapt to each scenario in the future based on their current repertoire. Following this approach, the user will have a better experience watching movies or videos to acquire knowledge of a new language. \\
   \textbf{Key words:} language learning, gamification, streaming platforms, subtitles, SRS, skimming, scanning
 \end{abstract} 
-
+\newpage
 
 
 \section{Introduction} 
@@ -43,25 +43,25 @@ The methodology adopted for the development is based on research on the process 
 The main objective of this project is to create a solution with well-known technologies and an excellent structure to make learning new languages more effortless and more enjoyable for the user, allowing them to utilize their free time to acquire knowledge of a new language playfully and effectively.
 
 \subsection{Motivation}
-The motivation for this project arises from the need to find alternatives to make learning a new language more exciting and efficient. The conventional language learning method can be tiresome and demotivating for many students. \\
+The motivation arises from the need to find alternatives to make learning a new language more exciting and efficient. The conventional language learning method can be tiresome and demotivating for many students. \\
 By creating an environment that allows interaction with streaming sites for movies, learning a new language can be done more naturally and playfully, similar to tools that translate web pages to facilitate learning or understanding of other languages already present in the market or research area \cite{ElBatanony21}. \\
 By watching movies with audio and subtitles in the original language, the user can learn while applying gamified SRS techniques to memorize new words. The motivation for this project is to provide an efficient and attractive alternative for learning new languages.
 
 \subsection{Problem Statement}
-The traditional method of learning a new language can be exhausting and demotivating for many students. The project aims to build another way to solve this problem. The project has an extension, site, and app to make the user experience better and more comfortable. \\
-Also, to illustrate this, we notice that the current learning method creates a massive flow of giving up; an empirical example is "only 55, or 19\% of 286 Year 11 students reported that they intended to continue studying the language after age 16. The four most frequently cited reasons for not continuing were (a) that they did not enjoy it (35 students), (b) it was difficult (25 students), (c) it was of no use for their planned career (23 students), and (d) they were not good at it (20 students)" \cite{Graham1}. 
+The traditional method of learning a new language can be exhausting and demotivating for many students. A more playful and interactive approach to learning new languages is necessary to make the process more enjoyable and efficient. 
+To illustrate this, we notice that the current learning method creates a massive flow of giving up; an empirical example is "only 55, or 19\% of 286 Year 11 students reported that they intended to continue studying the language after age 16. The four most frequently cited reasons for not continuing were (a) that they did not enjoy it (35 students), (b) it was difficult (25 students), (c) it was of no use for their planned career (23 students), and (d) they were not good at it (20 students)" \cite{Graham1}. 
 
 \subsection{General goals}
 
-This project aims to develop a browser extension that allows users to learn a new language or expand their vocabulary in a gamified and interactive manner. The extension will be designed to interact with movie streaming sites, leveraging the available subtitles on these sites to aid in the teaching process. \\
+This project aims to develop an application that allows users to learn a new language or expand their vocabulary in a gamified and interactive manner. The extension will be designed to interact with movie streaming sites, leveraging the available subtitles on these sites to aid in the teaching process. \\
 The project is based on the premise that learning a new language more efficiently and satisfactorily is possible when gamified and interactive. Additionally, it is based on a similar methodology - smart subtitles - which has been effective in expanding vocabulary \cite{Kovacs14}. \\
 Thus, the goal is to offer a different and efficient approach to using subtitles so that people can learn new languages and expand their vocabulary while watching their favorite movies in a relaxed and effective way.
 \subsection{Specific Objectives}
 
 The specific objectives of this project are as follows:
 \begin{itemize}
-\item Develop a browser environment that could be installed or accessed by users interested in learning new languages.
-\item Develop a browser extension that interacts with movie streaming sites to access the subtitles of watched films.
+\item A browser extension, a site, and an app environment that could be installed/accessed by users interested in learning new languages.
+\item A browser extension, a site, and an app that interacts with movie streaming sites to access the subtitles of watched films.
 \item Create a keyword database for each learned language and store user information, including their progression in learning.
 \item Translate the keywords into the user's language to aid comprehension.
 \item Apply gamified Spaced Repetition System (SRS) techniques to help users memorize keywords in their new language.
@@ -70,20 +70,21 @@ The specific objectives of this project are as follows:
 \item Provide support for multiple languages, allowing users to learn a wide range of languages using AI.
 \end{itemize}
 
-
 \section{Methodology}
-The methodology for this project will consist of creating a browser extension that will interact with movie streaming sites and extract the subtitles available on these sites. The database stores keywords for each language and user information, including their progression in learning. The site will also provide statistics on user progress, including the most challenging words, the total words learned, and others to help the user understand their learning process, and the app will provide a way for the user to study on every device. \\
-\begin{figure}[h]
+To achieve the project's objectives, on this article we followed a methodology based on the following steps:
+The first step was a literature review and gathering references for similar projects or theoretical foundations to turn language learning into a more playful and interactive experience. \\
+The second step was the study of methods for user training. With the goal of improve the user progress and how manager the user information, including their progression in learning to make the learning process more efficient. \\
+The third step was build an prototype functional based on the previous steps, to test the idea and the user experience. 
+\begin{figure}[!h]
 \centering
 \caption{Learning curves for new words using two types of subtitles and smart subtitles}
 \label{fig:my_label}
-\includegraphics[width=1\textwidth]{assets/3.png}
+\includegraphics[width=0.7\textwidth]{assets/3.png}
 \end{figure} 
 Additionally, the project's path is also based on the articles by Kovács et al. \cite{Kovacs14}, which use the premise of subtitles to advocate for a more playful and immersive learning method. This demonstrates the potential of such approaches for language learning and how more playful and intelligent approaches directly influence learning new words, as exemplified in Figure-\ref{fig:my_label}. \\
 The project utilizes techniques used by El Batanony et al. in their article "A browser extension to facilitate language acquisition" \cite{ElBatanony21}, making the beginning of the development a case study of their article, observing the approach they used to create an extension that interacts with web pages.  \\
 It also takes examples of big companies like Duolingo, Memrise, Busuu, Lingoda, Drops, and especially Language Reactor, which uses a similar approach to the project but with a different focus.  \\
-
-The extension will use Spaced Repetition System (SRS) techniques to gamify learning new languages based on the premise that knowledge of keywords or the most repeated ones allows for text comprehension. \\
+Using Spaced Repetition System (SRS) techniques to gamify learning new languages based on the premise that knowledge of keywords or the most repeated ones allows for text comprehension. \\
 The development of the extension was based on the following steps: 
 \begin{enumerate}
 \item Identification of streaming sites with available subtitles for movies.
@@ -156,12 +157,11 @@ The secondary difficulties were related to the development of the site and app, 
 Lastly, it is hard to create an excellent graphical interface that is responsive and fast, and the user can understand and use it without any problems. The project's current focus is to make it easier to operate, but it is missing some beautiful interfaces. 
 
 \section{Theoretical Referencial}
-In recent years, there has been a growing interest in the use of subtitled videos as a way to assist in the learning of foreign languages. However, standard subtitles are not ideal for vocabulary acquisition, as translations are non-literal and are provided only for phrases, not individual words. To overcome this problem, "Smart Subtitles" have been developed, interactive subtitles focused on vocabulary acquisition. "Smart Subtitles" includes features such as vocabulary definitions when hovering over with the mouse cursor and video navigation based on dialogue \cite{Kovacs13}. Studies have shown that students learn more than double the vocabulary with "Smart Subtitles" compared to Chinese-English dual subtitles, with similar levels of comprehension and satisfaction \cite{Kovacs14}. \\ 
+In recent years, there has been a growing interest in the use of subtitled videos as a way to assist in the learning of foreign languages. However, standard subtitles are not ideal for vocabulary acquisition, as translations are non-literal and are provided only for phrases, not individual words. \\
+To overcome this problem, "Smart Subtitles" have been developed, interactive subtitles focused on vocabulary acquisition. "Smart Subtitles" includes features such as vocabulary definitions when hovering over with the mouse cursor and video navigation based on dialogue \cite{Kovacs13}. Studies have shown that students learn more than double the vocabulary with "Smart Subtitles" compared to Chinese-English dual subtitles, with similar levels of comprehension and satisfaction \cite{Kovacs14}. \\ 
 Another approach to assist in the learning of foreign languages is the use of browser extensions. The browser extension "InteractiveSubtitle" \cite{ElBatanony21} is an example of this. The extension features personalized learning, translation of phrases in context on web pages, and support for over 100 languages. The goal is to utilize various hypotheses of foreign language acquisition to create a new language learning tool that is more effective. \\ 
 Based on these ideas, a browser extension has been proposed that utilizes "Smart Subtitles" to train users through gamified practice before watching a subtitled movie in a language they are learning. The extension may also aim to include features such as interactive exercises to reinforce vocabulary acquisition and games to help users practice listening and reading skills. The extension will be customized to the user's level and interests, providing an interactive and engaging learning environment. \\
 Also, to improve the user commodity, an app and a site were proposed to not necessarily use a computer to study, providing a way for the user to study on every device. 
-
-
 \section{Software Design}
 
 \begin{figure}[!h]
@@ -183,22 +183,18 @@ Also, to improve the user commodity, an app and a site were proposed to not nece
   \label{fig:container_diagram}
   \includegraphics[width=1\textwidth]{assets/24.png}
 \end{figure}
-
-Created using modern technologies, including JavaScript, Typescript, HTML, CSS, Prisma, Nextjs, PostgreSQL, and Web Channels. The project will also utilize the browser's internal messaging services to integrate the extension with streaming sites. The extension works with Prime Video, but the goal is to expand to other platforms like Netflix, Disney+, and others. \\
+Created using modern technologies, including JavaScript, Typescript, HTML, CSS, Prisma, Nextjs, PostgreSQL, and Web Channels. This worker  also utilize the browser's internal messaging services to integrate the extension with streaming sites. The extension works with Prime Video, but the goal is to expand to other platforms like Netflix, Disney+, and others. \\
 The technologies were chosen based on the need to create a fast and efficient application with a good user experience and an excellent database to store user information and progression. Nextjs is a frontend and backend that has a big community and is very fast, having a good integration with Prisma, a ORM (Object-Relational Mapping) that is easy to use and has a good amount of users with PostgreSQL database. 
-
-\begin{figure}[htbp]
+\begin{figure}[!h]
 \centering
 \caption{
 Context Diagram for the application
 }
 \label{fig:context_diagram}
-\includegraphics[width=1\textwidth]{assets/4.png}
+\includegraphics[width=0.6\textwidth]{assets/4.png}
 \end{figure}
-
-At this point of the project, an environment to learn a new language was built, including a browser extension, a site, and an app, all integrated and working together to provide a better. The diagram provided in Figure-\ref{fig:database_diagram} illustrates the intricate structure of the database employed in this project. It meticulously outlines the relationships between various tables, providing a comprehensive overview of how user data and language information are organized and interconnected within the system for the user.
-
-\begin{figure}[htbp]
+At this point of the project, an environment to learn a new language was built, including a browser extension, a site, and an app, all integrated and working together to provide a better. The diagram provided in Figure-\ref{fig:database_diagram} illustrates the intricate structure of the database employed in this project. It meticulously outlines the relationships between various tables, providing a comprehensive overview of how user data and language information are organized and interconnected within the system for the user. \\
+\begin{figure}[!h]
   \centering
   \caption{
     The flow of the project until the use of the AI
@@ -206,32 +202,29 @@ At this point of the project, an environment to learn a new language was built, 
   \label{fig:flow_diagram}
   \includegraphics[width=1\textwidth]{assets/26.png}
 \end{figure}
-
-The Container diagram, depicted in Figure-\ref{fig:container_diagram}, offers a detailed visualization of the project's architecture, delineating the interactions between different components such as the extension, site, and app. This diagram showcases the technological framework utilized and elucidates how these components collaborate to facilitate seamless communication and functionality. 
-
-
-The figure-\ref{fig:context_diagram} is a context diagram that was built to create this environment. Where we could see the core of the system using an IA provided by openAI, to generate translations, meanings, and games. Each one of the environments has its own functions and responsibilities. The extension is responsible for capturing the subtitles and open modal with iframe, the site is responsible for storing the data and providing the games, and the app is responsible for showing the site inside the iframe and sending the user information to the site.
+The Container diagram, depicted in Figure-\ref{fig:container_diagram}, offers a detailed visualization of the project's architecture, delineating the interactions between different components such as the extension, site, and app. This diagram showcases the technological framework utilized and elucidates how these components collaborate to facilitate seamless communication and functionality. \\
+The figure-\ref{fig:context_diagram} is a context diagram that was built to create this environment. Where we could see the core of the system using an IA provided by openAI, to generate translations, meanings, and games. Each one of the environments has its own functions and responsibilities. The extension is responsible for capturing the subtitles and opening the modal with the iframe, the site is responsible for storing the data and providing the games, and the app is responsible for showing the site inside the iframe and sending the user information to the site.
 
 To be more visible the process of the games and word data acquisition, the figure-\ref{fig:flow_diagram} illustrates it. This flow was selected with a focus on optimizing speed due to the substantial volume of data involved, along with the associated costs of utilizing AI. \\
 Presently, the AI of choice is the gpt-3.5-turbo-1106 model developed by OpenAI, incurring costs of \$0.0010 per 1K tokens of input and \$0.0020 per 1K tokens of output. Leveraging a database for storing data offers greater flexibility, particularly since the input remains constant. This approach ensures that when a user learns a word in a specific language and transitions to another, the necessary information about games and the word parameter are retrieved from the AI only once. 
-
 \section{Results}
 A browser extension was developed that interacts with movie streaming sites and extracts the subtitles available on these sites. The extension uses Spaced Repetition System (SRS) techniques to gamify learning new languages based on the premise that knowledge of keywords or the most repeated ones allows for text comprehension. The goal is to expand to other platforms like Netflix, Disney+, and others. \\ 
 The site was also developed to provide statistics on user progress, including the most challenging words, the total words learned, and others to help the user understand their learning process. The site also supports multiple languages, allowing users to learn a wide range of languages using AI translations and the creation of games.  \\
 The app was developed to provide a way for the user to study on every device, showing the iframe with the application site.\\
 This project has demonstrated the potential of using technology to facilitate language learning. Integrating our tool with everyday activities such as watching movies can make language learning more engaging and compelling; 
-\subsection{interfaces}
-As a result, each environment has its own functions and responsibilities. Splitting the work of each part to be more controllable. 
+\subsection{Interface}
+As a result, each environment has its own functions and responsibilities, and based on that it needs a different interface(recourses) to have a better responsibility and user experience. And improve the features that each environment possibilite. The user can interact with the application with the ambient mobile and browser, using the app, site or extension. Each interface is different and has different layouts and features to improve the user experience. 
 \subsubsection{site}
+The module of site has a interface that adjust to the user's device. The site is the base of extension and app, and those use a iframe to show the site. The design is based to long and small screens to support the user in every device. The site also provides a way to communicate with the extension and the app, and the user can access the site to continue training the words from the streaming platform. Some examples of ways to interact with the application are:
 \begin{itemize}
-\item The languages, where the user started to learn, the possible movies to study and the movies that the user has started, as demonstrated in the figure-\ref{fig:site1}.
-\item A List of languages that the user can learn, as demonstrated in the figure-\ref{fig:site2}.
-\item The user profile with progress for each language, as demonstrated in the figure-\ref{fig:site3}.
-\item A list of languages when the user selects a language to learn, as demonstrated in the figure-\ref{fig:site4}.
-\item The possible games that the user can play, as demonstrated in the figure-\ref{fig:site5}.
+\item   Languages Page: where the user started to learn, the possible movies to study and the movies that the user has started, as demonstrated in the figure-\ref{fig:site1}.
+\item Language List: A List of languages that the user can learn, as demonstrated in the figure-\ref{fig:site2} and in the mobile version in the figure-\ref{fig:app2};
+\item Profile Page: The user profile with progress for each language, as demonstrated in the figure-\ref{fig:site3}.
+\item Languages by Movie: A list of languages when the user selects a movie, as demonstrated in the figure-\ref{fig:site4}.
+\item Games Page: A list of possible games that the user can play, as demonstrated in the figure-\ref{fig:site5}.
 % \item Example of game, as demonstrated in the figure-\ref{fig:site6}.
 % \item Example of the Memory game, as demonstrated in the figure-\ref{fig:site7}.
-\item Example of the Quiz game, as demonstrated in the figure-\ref{fig:site8}.
+% \item Example of the Quiz game, as demonstrated in the figure-\ref{fig:site8}.
 \end{itemize}
   \begin{figure}[!h]
    \centering
@@ -239,7 +232,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
    Initial site interface for the user with the languages, movies, and started movies.
     }
    \label{fig:site1}
-   \includegraphics[width=0.8\textwidth]{assets/20.png}
+   \includegraphics[width=0.5\textwidth]{assets/20.png}
   \end{figure}
 
   \begin{figure}[!h]
@@ -248,7 +241,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
     A list of languages that the user can learn. 
     }
     \label{fig:site2}
-    \includegraphics[width=0.8\textwidth]{assets/21.png}
+    \includegraphics[width=0.475\textwidth]{assets/21.png}
   \end{figure}
 
     \begin{figure}[!h]
@@ -257,7 +250,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
       The user profile with progress for each language.
       }
       \label{fig:site3}
-      \includegraphics[width=0.8\textwidth]{assets/22.png}
+      \includegraphics[width=0.475\textwidth]{assets/22.png}
     \end{figure}
 
     \begin{figure}[!h]
@@ -266,7 +259,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
       A list of languages when the user selects a language to learn.
       }
       \label{fig:site4}
-      \includegraphics[width=0.8\textwidth]{assets/25.png}
+      \includegraphics[width=0.475\textwidth]{assets/25.png}
     \end{figure}
 
     \begin{figure}[!h]
@@ -275,7 +268,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
       The possible games that the user can play.
       }
       \label{fig:site5}
-      \includegraphics[width=0.8\textwidth]{assets/5.png}
+      \includegraphics[width=0.475\textwidth]{assets/5.png}
     \end{figure}
 
 
@@ -298,30 +291,37 @@ As a result, each environment has its own functions and responsibilities. Splitt
     %   \includegraphics[width=0.8\textwidth]{assets/7.png}
     % \end{figure}
 
-    \begin{figure}[!h]
-      \centering
-      \caption{
-      Example of the Quiz game 
-      }
-      \label{fig:site8}
-      \includegraphics[width=0.8\textwidth]{assets/8.png}
-    \end{figure}
-\subsubsection{iframe inside extension}
+    % \begin{figure}[!h]
+    %   \centering
+    %   \caption{
+    %   Example of the Quiz game 
+    %   }
+    %   \label{fig:site8}
+    %   \includegraphics[width=0.5\textwidth]{assets/8.png}
+    % \end{figure}
+\newpage
+\subsubsection{iframe to extension}
+      This module is used on modal when the users opens a movie on the streaming site. The user could interact with the application with 
+      inicial interface, equal of site in the figure-\ref{fig:site5}, but inside a iframe, where the user could select the gamer witch he wants to play. 
+      And those games are the Flashcard, Memory, and Quiz, as demonstrated in the figure-\ref{fig:iframe2}, figure-\ref{fig:iframe3}, and figure-\ref{fig:iframe4}.
+      The entire playing process is inside the iframe, and the user can interact with the application without leaving the streaming site.
+      
+      
+    % \begin{itemize}
+    % \item The list of games that the user can play;
+    % , as demonstrated in the figure-\ref{fig:iframe1}.
+    % \item The Flashcard, Memory and Quiz games, as demonstrated in the figure-\ref{fig:iframe2}, figure-\ref{fig:iframe3}, and figure-\ref{fig:iframe4}.
+    % \end{itemize}
 
-    \begin{itemize}
-    \item The list of games that the user can play, as demonstrated in the figure-\ref{fig:iframe1}.
-    \item The Flashcard, Memory and Quiz games, as demonstrated in the figure-\ref{fig:iframe2}, figure-\ref{fig:iframe3}, and figure-\ref{fig:iframe4}.
-    \end{itemize}
 
-
-    \begin{figure}[!h]
-      \centering
-      \caption{
-      Games list inside iframe on the prime video site.
-      }
-      \label{fig:iframe1}
-      \includegraphics[width=0.8\textwidth]{assets/9.png}
-    \end{figure}
+    % \begin{figure}[!h]
+    %   \centering
+    %   \caption{
+    %   Games list inside iframe on the prime video site.
+    %   }
+    %   \label{fig:iframe1}
+    %   \includegraphics[width=0.45\textwidth]{assets/9.png}
+    % \end{figure}
 
     \begin{figure}[!h]
       \centering
@@ -329,7 +329,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
       Games Flashcard inside iframe on the prime video site.
       }
       \label{fig:iframe2}
-      \includegraphics[width=0.8\textwidth]{assets/10.png}
+      \includegraphics[width=0.52\textwidth]{assets/10.png}
     \end{figure}
 
     \begin{figure}[!h]
@@ -338,7 +338,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
       Games Memory inside iframe on the prime video site.
       }
       \label{fig:iframe3}
-      \includegraphics[width=0.8\textwidth]{assets/11.png}
+      \includegraphics[width=0.52\textwidth]{assets/11.png}
     \end{figure}
 
     \begin{figure}[!h]
@@ -347,36 +347,39 @@ As a result, each environment has its own functions and responsibilities. Splitt
       Games Translate inside iframe on the prime video site.
       }
       \label{fig:iframe4}
-      \includegraphics[width=0.8\textwidth]{assets/12.png}
+      \includegraphics[width=0.52\textwidth]{assets/12.png}
     \end{figure}
 
-\subsubsection{iframe}
+\subsubsection{iframe to app}
+This module is used by the app, but also used on the pop-up of the extension. This provide a small interface and resize components to adapte to that environment. Examples of ways to interact with the application with the following interfaces:
 \begin{itemize}
-  \item login as demonstrated in the figure-\ref{fig:app1}.
-  \item List of languages and movies as demonstrated in the figure-\ref{fig:app2}.
-  \item List of languages as demonstrated in the figure-\ref{fig:app3}.
-  \item List of languages by movie as demonstrated in the figure-\ref{fig:app4} and figure-\ref{fig:app5}.
-  \item Translate game as demonstrated in the figure-\ref{fig:app6}.
+  \item Login Page: a screen to the user login as demonstrated in the figure-\ref{fig:app1}.
+  \item Home Page:  that screen provide a list of languages and movies as demonstrated in the figure-\ref{fig:app2}.
+  \item Languages Page: this interface is where is listed all languages available to learn on the application as demonstrated in the figure-\ref{fig:app3}.
+  \item Language by movie page: list all languages for each movie as demonstrated in the figure-\ref{fig:app4} and figure-\ref{fig:app5}.
+  \item Game Translate Page: A game where the user needs to inform the correct translation for a word in a specif phrase demonstrated in the figure-\ref{fig:app6}.
   \item And the others games as the site and iframe extension. 
   \end{itemize}
-
+  
+ \begin{figure}[!h]
+    \centering
+    \caption{
+     List of languages and movies inside iframe on the app.
+    }
+    \label{fig:app2}
+    \includegraphics[width=0.5\textwidth]{assets/15.png}
+  \end{figure}
+  
   \begin{figure}[!h]
     \centering
     \caption{
     Login inside iframe on the app.
     }
     \label{fig:app1}
-    \includegraphics[width=0.3\textwidth]{assets/14.png}
+    \includegraphics[width=0.32\textwidth]{assets/14.png}
   \end{figure}
 
-  \begin{figure}[!h]
-    \centering
-    \caption{
-     List of languages and movies inside iframe on the app.
-    }
-    \label{fig:app2}
-    \includegraphics[width=0.3\textwidth]{assets/15.png}
-  \end{figure}
+ 
 
   \begin{figure}[!h]
     \centering
@@ -384,7 +387,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
      List of languages inside iframe on the app.
     }
     \label{fig:app3}
-    \includegraphics[width=0.3\textwidth]{assets/16.png}
+    \includegraphics[width=0.32\textwidth]{assets/16.png}
   \end{figure}
 
 
@@ -394,7 +397,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
      List of languages by movie inside iframe on the app.
     }
     \label{fig:app4}
-    \includegraphics[width=0.3\textwidth]{assets/17.png}
+    \includegraphics[width=0.32\textwidth]{assets/17.png}
   \end{figure}
 
   \begin{figure}[!h]
@@ -403,7 +406,7 @@ As a result, each environment has its own functions and responsibilities. Splitt
      List of languages by movie inside iframe on the app.
     }
     \label{fig:app5}
-    \includegraphics[width=0.3\textwidth]{assets/18.png}
+    \includegraphics[width=0.32\textwidth]{assets/18.png}
   \end{figure}
 
   \begin{figure}[!h]
@@ -412,13 +415,10 @@ As a result, each environment has its own functions and responsibilities. Splitt
      Translate game inside iframe on the app.
     }
     \label{fig:app6}
-    \includegraphics[width=0.3\textwidth]{assets/19.png}
+    \includegraphics[width=0.32\textwidth]{assets/19.png}
   \end{figure}
 
-
-
-
-
+\newpage
 \subsection{Conclusion}
 In conclusion, this project has successfully developed a browser extension, a website, and an app that aims to facilitate language learning by extracting subtitles from movie streaming sites. The extension utilizes Spaced Repetition System (SRS) techniques to gamify language learning, while the website provides statistics on user progress and supports multiple languages. The app allows users to study on any device. \\
 Moving forward, several next steps are planned for each project component. The extension will be expanded to other streaming sites, languages, and platforms and integrated with other language-learning tools. The website will include interactive exercises, games, and customized learning experiences. The app will capture device information and improve communication with the website. \\
@@ -427,31 +427,34 @@ Overall, this project demonstrates the potential of using technology to make lan
 
 \subsection{Future Works}
 
-For the future works there are subsections for each one and each environment (extension, site, app).
+For future works there are subsections for each one and each environment (extension, site, app, backend, and AI) to improve the prototype. Because the project is a prototype, and the goal is to improve the user experience and the learning process, also to make the application more responsive and fast, create a better interface, and improve the user experience and reduce costs to maintain the application.
 
 \subsubsection{Extension}
-- Expanded to other streaming sites, languages, and platforms.  \\
-- Use the browser's internal messaging services and, in the future, integrate with some web sockets to improve the communication between the extension and the site.  \\
-- Integration with other language learning tools, such as Language Reactor, that uses a similar approach to the project but with a different focus.  \\
-- New interactive exercises and games to reinforce vocabulary acquisition and customize the extension to the user's level and interests.
+The extension needs to be some refactors to turn more responsible and fast, because the background service that takes the subtitles is slow and execute a cron job to get the subtitles. Is necessary study ways to do this using dispatch events and workers. \\
+Currently, the repertoire of sites is really small that the extension could comunicate, restrict only to Prime video, but the goal is to expand to other platforms like Netflix, Disney+, and others. \\
+Also is important create a websocket to extract informations of the site, considering that some streaming use another technology to show get the subtitles. \\
+Considering that is possible create communications between extensions or sites, a discussion about the possibility to integrate with others tools like Language Reactor, is viable.
+
 \subsubsection{Site}
-- The site will be expanded to include new features like interactive exercises and games to reinforce vocabulary acquisition. The site will also be customized to the user's level and interests, providing an interactive and engaging learning environment.  \\
-- New channels Will allow the site to communicate with mobile and notify the user to study like a reminder. \\
-- Web sockets will be used to improve the communication between the extension and the site. \\
-- Redesign the site to improve the user experience and make it more responsive.
+The site is the core of the application, and is necessary to improve the user experience and make it more responsive. The site will be expanded to include new features like interactive exercises and games to reinforce vocabulary acquisition. \\
+About the games, is necessary to create a better interface and improve the user experience. Because the games are the part visible of the core of the learning process, and the user needs to have a good experience to continue using the application. The site was created without a professional designer, and games are the part that needs more attention about design. \\
+And the entire site needs to be more responsive and fast, and the user can understand and use it without any problems. The UX is missing, and the site needs to be redesigned. \\
+Levels, interests and other user information are not being used to improve the user experience, and the site needs to be customized to the user's level and interests, providing an interactive and engaging learning environment. \\
+The last part about UX is the current language of the site, that is not possible change the site language, and is a relevant part to improve the user experience. \\
+More about technological is interesting associate the site with the websockets also, and create new channels to communicate with mobile and notify the user to study like a reminder. 
 
 \subsubsection{App}
-- The app will capture device information and send it to iframe to turn it more responsible and fast.  \\
-- New channels will be created to communicate with the site and allow native features like notifications and others.
-
+The app will be improved to capture device information and send it to the iframe to turn it more responsible and fast. This possibilitate sends to the backend those informations and create a dashboard or extract to discovery the user behavior and how improve it. \\
+The channel to communicate with the site to possibilitate configure notifications is also a important feature, because a huge part of the users use the app to study, and the app needs to remember the user to do this. \\
 \subsubsection{Backend} 
-- Some API routers will be improved using workers because the data will be extensive, and the app and site will be faster and more responsive. \\
-- The language manager will be changed using only the language name, not the language code.  \\
-- Creating web sockets to improve the communication between the extension and the site. \\
-- Build routines to run at night that will recalculate the user progress and the word level based on the results of all users.
+On the backend, the API routers will be improved using workers because the data will be extensive, and the app and site will be faster and more responsive. \\
+Some API routers will be improved using workers because the data will be extensive, and the app and site will be faster and more responsive. \\
+As the data of each word is a complex processing a solution is build routines to run at night that will recalculate the user progress and the word level based on the results of all users.
+Another important part is the language manager, that will be changed using only the language name, not the language code. \\
+And the last part is the web sockets, that will be created to improve communication between the extension and the site, and the site and the app. \\
 
 \subsection{AI}
-- Enhance project performance and stabilize monthly payments by leveraging proprietary AI technology. Considering the adoption of Smaug-72B-v0.1, an advanced open AI model known for surpassing the capabilities of my current paid AI solution. The transition to utilizing in-house AI will occur when it becomes more advantageous than relying on third-party APIs.
+The AI of choice is the gpt-3.5-turbo-1106 model developed by OpenAI, incurring costs of \$0.0010 per 1K tokens of input and \$0.0020 per 1K tokens of output. The goal is to reduce costs. Enhance project performance and stabilize monthly payments by leveraging proprietary AI technology. Considering the adoption of Smaug-72B-v0.1, an advanced open AI model known for surpassing the capabilities of my current paid AI solution. The transition to utilizing in-house AI will occur when it becomes more advantageous than relying on third-party APIs.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
