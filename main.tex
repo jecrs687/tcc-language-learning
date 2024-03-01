@@ -33,15 +33,37 @@
 
 \section{Introduction} 
 
-Mastering a new language is undeniably valuable, yet it's often accompanied by challenges such as waning motivation and a sense of discomfort. What if there was a way to transform language acquisition into an engaging and less taxing experience? Imagine users effortlessly learning while enjoying themselves. 
-In parallel, watching movies and series is a common activity and enjoyable; streaming platforms have become a popular source of entertainment. A huge number of people use those platforms to train or learn a new language using subtitles and audio.
+Mastering a new language is undeniably valuable, yet it's often accompanied by challenges such as waning motivation and a sense of discomfort. What if there was a way to transform language acquisition into an engaging and less taxing experience? Imagine users effortlessly learning while enjoying themselves. \\
+In parallel, watching movies and series is a common activity and enjoyable; streaming platforms have become a popular source of entertainment as noted using the dates from Figure-\ref{fig:netflix_quarter}, Figure-\ref{fig:disney_quarter} and Figure-\ref{fig:subscribers_table}. A huge number of people use those platforms to train or learn a new language using subtitles and audio. \\
 Studies demonstrate that students acquire a new language at double the speed using a similar learning mechanism called smart subtitles \cite{Kovacs13}. Thus, it is feasible to infer that approaches involving entertainment platforms can also be practical for learning, especially when utilizing subtitles from these platforms. \\
 The fusion of these concepts has the potential to help language learning, making it more engaging and less taxing. This work is about the creation of an application that allows users to learn a new language or expand their vocabulary in a gamified and interactive manner using streaming platforms.
+
+\begin{figure}[!h]
+\centering
+\caption{Netflix subscribes from 2011 until 2023. font: company data}
+\label{fig:netflix_quarter}
+\includegraphics[width=0.55\textwidth]{assets/27.png}
+\end{figure} 
+
+\begin{figure}[!h]
+\centering
+\caption{Disney subscribes from 2011 until 2023. font: company data}
+\label{fig:disney_quarter}
+\includegraphics[width=0.55\textwidth]{assets/28.png}
+\end{figure} 
+
+\begin{figure}[!h]
+\centering
+\caption{Table with lists of subscribers. Font: Forbes, access: 02.2023}
+\label{fig:subscribers_table}
+\includegraphics[width=1\textwidth]{assets/29.png}
+\end{figure} 
+
 
 \subsection{Motivation}
 The motivation arises from the need to find alternatives to make learning a new language more exciting and efficient. The conventional language learning method can be tiresome and demotivating for many students. \\
 By creating an environment that allows interaction with streaming sites for movies, learning a new language can be done more naturally and playfully, similar to tools that translate web pages to facilitate learning or understanding of other languages already present in the market or research area \cite{ElBatanony21}. \\
-By watching movies with audio and subtitles in the original language, the user can learn while applying gamified SRS techniques to memorize new words. In succinct terms, the motivation for this work is to provide an efficient and attractive alternative for learning new languages.
+By watching movies with audio and subtitles in the original language, the user can learn while applying gamified Spaced Repetition System (SRS) techniques to memorize new words. In succinct terms, the motivation for this work is to provide an efficient and attractive alternative for learning new languages.
 
 \subsection{Problem Statement}
 The traditional method of learning a new language can be exhausting and demotivating for many students. A more playful and interactive approach to learning new languages is necessary to make the process more enjoyable and efficient. 
@@ -72,10 +94,27 @@ The work aims to achieve the following specific objectives:
 To achieve the work's objectives, in this article we followed a methodology based on the following steps:
 The first step was a literature review and gathering references for similar works or theoretical foundations to turn language learning into a more playful and interactive experience. \\
 The second step was the study of methods for user training to improve the user's progress and how to manage the user information, including their progression in learning to make the learning process more efficient. \\
-The third step was to build a prototype based on the previous steps, to test the idea and the user experience. 
-Additionally, it examines big companies like Duolingo, Memrise, Busuu, Lingoda, Drops, and especially Language Reactor, which are the most popular language-learning platforms, to understand how they work and how to improve the user experience. \\
+The third step was to build a prototype based on the previous steps, to test the idea and the user experience. \\
+\subsection{First Step}
 
-\subsection{Key Requirements}
+The literature review identified \cite{ElBatanony21} and \cite{Kovacs14} regarding subtitles in movies and their role in language learning. However, it is evident from apps like Flex and others that utilize this methodology that users do not receive training tailored to their individual word difficulty levels.  \\
+Apps such as Duolingo, Memrise, Busuu, Lingoda, and Drops employ algorithms that adapt to the specific difficulties of each user. While the exact algorithms are not disclosed, users can observe word repetition in different contexts during the training process. This technique, known as Spaced Repetition System (SRS), facilitates user study. Moreover, gamification is integral to these apps, enhancing language learning and potentially improving both user experience and the learning process. \\
+Current methods utilizing subtitles often result in recurrent breaks, as users must pause the movie to view translations by clicking on words or may need to read dual subtitles simultaneously. Another technique involves translating only the difficult parts of a phrase (smart subtitles), but this lacks interactivity and playfulness. 
+\subsection{Second Step}
+
+The second step focused on understanding the functionalities of language learning apps like Duolingo and others, and how to enhance both user experience and the learning process. \\
+In 2024, it is notable that these apps leverage gamification to make learning less taxing. Games form the core of the learning process, compelling users to engage actively. For instance, Duolingo incorporates skimming and scanning techniques, presenting phrases and words in various contexts either to teach new words or to facilitate understanding without requiring knowledge of every word. \\ 
+Another significant app is Anki, which employs SRS to improve both user experience and learning outcomes.  \\
+Furthermore, this step involved understanding user data and its utilization for enhancing the learning process. It was identified that tracking when a user encounters a word, whether they learned it, and its significance to the user can significantly improve learning efficiency and user experience.
+
+\subsection{Third Step}
+
+This step aimed to integrate the four identified cores: SRS, gamification, scanning, and skimming, with the addition of "smart" functionality to subtitles. Users should be trained based on their individual difficulties, without interrupting the enjoyment of watching a video or movie with constant breaks for word translations. \\ 
+The proposed solution involves creating an application that teaches users before watching the movie, eliminating the need for interruptions. This application should be interactive and playful, incorporating games to enhance both user experience and learning outcomes while employing SRS techniques.\\ 
+To implement this, interaction with streaming sites is necessary to capture subtitles and provide word translations to users seamlessly. There are two feasible approaches: wrapping the site or using a browser extension. However, due to streaming sites' use of technologies to block requests from different origins, only the browser extension approach is viable.\\
+In addition to the extension, creating other environments such as a website and a mobile app to enhance user experience and learning outcomes is also important to provide an entire ecosystem for the user. 
+
+\subsubsection{Key Requirements}
 
 To meet the work's objectives, a comprehensive list of activities was undertaken. The work's development was segmented into various stages, each following a logical progression towards finalizing the requirement list. Different steps were identified for each environment.
 
@@ -93,7 +132,6 @@ Based on the work's objectives and the methodology used, we identified the follo
 \item Data analysis and study of possibilities for user training and important data for capture and storage.
 \item Testing and improvement of subtitle capture.
 \item Development of teaching logic based on captured subtitles.
-\item Integration of subtitle capture and teaching logic.
 \item Testing and improvement of teaching logic.
 \item Integration of subtitle capture and teaching logic.
 \item Final testing of the extension.
@@ -145,7 +183,7 @@ The app:
 \end{enumerate}
 
 
-\subsection{Difficulties and Challenges}
+\subsubsection{Difficulties and Challenges}
 The main difficulties and challenges encountered during the application development were related to integrating the extension with streaming sites and developing the teaching logic based on captured subtitles. The extension's integration with streaming sites required using the browser's internal messaging services, a new and complex feature to work with. Developing the teaching logic was also challenging, as it needed to use Spaced Repetition System (SRS) techniques to gamify learning new languages. This requires a deep understanding of SRS techniques, which data was necessary to store, and how to store it. \\
 The secondary difficulties were related to the development of the site and app, as it required a deep understanding of and applying those technologies to the work, like the iframe, web channels, and others. \\
 Lastly, it is hard to create an excellent graphical interface that is responsive and fast, so that the user can understand and use it without any problems. The work's current focus is to make it easier to operate, but it lacks some visually appealing interfaces.
@@ -154,9 +192,12 @@ Lastly, it is hard to create an excellent graphical interface that is responsive
 \section{Theoretical Referencial}
 In recent years, there has been a growing interest in the use of subtitled videos as a way to assist in the learning of foreign languages. However, standard subtitles are not ideal for vocabulary acquisition, as translations are non-literal and are provided only for phrases, not individual words. \\
 To overcome this problem, "Smart Subtitles" have been developed, interactive subtitles focused on vocabulary acquisition. "Smart Subtitles" includes features such as vocabulary definitions when hovering over with the mouse cursor and video navigation based on dialogue \cite{Kovacs13}. Studies have shown that students learn more than double the vocabulary with "Smart Subtitles" compared to Chinese-English dual subtitles, with similar levels of comprehension and satisfaction \cite{Kovacs14}. \\ 
+Those dual subtitles are a common method for learning a new language, the user see two subtitles, one in the original language and another in the language that the user is learning, and the user needs to read both to understand the movie. \\
 Another approach to assist in the learning of foreign languages is the use of browser extensions. The browser extension "InteractiveSubtitle" \cite{ElBatanony21} is an example of this. The extension features personalized learning, translation of phrases in context on web pages, and support for over 100 languages. The goal is to utilize various hypotheses of foreign language acquisition to create a new language learning tool that is more effective. \\ 
-Based on these ideas, an application has been proposed that utilizes "Smart Subtitles" to train users through gamified practice before watching a subtitled movie in a language they are learning. The application also aims to include features such as interactive exercises to reinforce vocabulary acquisition and games to help users. 
+Some students of languages doesn't adopt this method, but adopt methods as SRS, that is a technique tested and proved the effectiveness by Landauer and Bjork in 1978, that involves reviewing information at increasing intervals. This technique is used in apps like Anki, Duolingo, and others, and is a technique that is used to improve the user experience and learning outcomes. \\
+Based on these ideas, an application has been proposed that utilizes a real kind of "Smart Subtitles" to train users through gamified practice before watching a subtitled movie in a language they are learning. The application also aims to include features such as interactive exercises to reinforce vocabulary acquisition and games to help users.  \\
 Also, to improve the user commodity, an app and a site were proposed to not necessarily use a computer to study, providing a way for the user to study on every device. 
+
 \section{Software Design}
 The application core (the method of teaching) is based on the articles by Kovács et al. \cite{Kovacs14}, which use the premise of subtitles to advocate for a more playful and immersive learning method. This demonstrates the potential of such approaches for language learning and how more playful and intelligent approaches directly influence learning new words, as exemplified in Figure-\ref{fig:my_label}. \\
 \begin{figure}[!h]
