@@ -8,6 +8,7 @@
 %\usepackage[brazil]{babel}   
 \usepackage[utf8]{inputenc}  
 
+     
 \sloppy
 
 \title{Gamified Language Learning: Enhancing Learning through Streaming Services and SRS}
@@ -198,6 +199,20 @@ Another approach to assist in the learning of foreign languages is the use of br
 Some students of languages doesn't adopt this method, but adopt methods as SRS, that is a technique tested and proved the effectiveness by Landauer and Bjork in 1978, that involves reviewing information at increasing intervals. This technique is used in apps like Anki, Duolingo, and others, and is a technique that is used to improve the user experience and learning outcomes. \\
 Based on these ideas, an application has been proposed that utilizes a real kind of "Smart Subtitles" to train users through gamified practice before watching a subtitled movie in a language they are learning. The application also aims to include features such as interactive exercises to reinforce vocabulary acquisition and games to help users.  \\
 Also, to improve the user commodity, an app and a site were proposed to not necessarily use a computer to study, providing a way for the user to study on every device. 
+\subsection{Subtitles}
+Smart subtitles and dual subtitles have emerged as innovative solutions to enhance the multilingual viewing experience for audiences worldwide. These technologies leverage advancements in natural language processing and multimedia to provide seamless translation and accessibility options for viewers. \\
+Dual subtitles, offer a unique viewing experience by presenting multiple languages simultaneously on-screen. This method is particularly beneficial for language learners and bilingual audiences seeking to improve their language proficiency. The concept of dual subtitles has been explored by scholars such as Dr. François Yvon, who has investigated its effectiveness in language acquisition and comprehension.\\
+Smart subtitle technologies are integrated into streaming platforms and media players, allowing users to enable translation features with a simple toggle. Companies like fleex and Language Reactor have invested in smart subtitle solutions to cater to their diverse global audience. The implementation of dual subtitles often involves specialized software tools or custom video players capable of displaying multiple subtitle tracks simultaneously. \\
+Studies conducted by researchers such as Dr. Spela Vintar and Dr. Koen van Turnhout have demonstrated the effectiveness of smart subtitles and dual subtitles in improving language learning outcomes and comprehension rates. Their research highlights the potential of these technologies to bridge language barriers and promote cross-cultural understanding in multimedia contexts.\\
+Smart subtitles and dual subtitles represent significant advancements in the field of multimedia translation and accessibility. By leveraging cutting-edge technologies and insights from scholars like Alex Waibel, François Yvon, Spela Vintar, and Koen van Turnhout, these methods offer new possibilities for enhancing the multilingual viewing experience and promoting linguistic diversity in digital media.
+
+\subsection{Spaced Repetition System (SRS)}
+Spaced Repetition Systems (SRS) have revolutionized the way we learn and retain information. The concept of spaced repetition dates back to the 19th century, but it gained significant attention and refinement in the digital era. This method leverages the psychological spacing effect, where information is better retained when revisited at increasing intervals over time. \\
+The foundation of SRS lies in the \textit{spacing effect}, a phenomenon observed in cognitive psychology. Hermann Ebbinghaus, a German psychologist, first documented this effect in his studies on memory in the late 19th century. His research laid the groundwork for understanding how repetition and timing impact memory retention.\\
+One of the most influential implementations of SRS is \textit{SuperMemo}, developed by Dr. Piotr Wozniak in the late 1980s. SuperMemo was one of the first computer-based systems designed to optimize the learning process through spaced repetition algorithms. Wozniak's work has inspired numerous SRS applications and research studies worldwide.\\
+Research conducted by cognitive psychologists such as Dr. Sebastian Leitner further validates the effectiveness of spaced repetition. Leitner introduced the \textit{Leitner system}, a practical implementation of spaced repetition using flashcards arranged in different boxes based on recall success. His work demonstrates how SRS can enhance long-term retention compared to traditional learning methods.\\
+Spaced Repetition Systems offer a promising approach to optimize learning and memory retention. From pioneers like Hermann Ebbinghaus to modern innovators like Piotr Wozniak and Sebastian Leitner, the study of SRS continues to evolve, shaping the future of education and cognitive science.
+
 
 \section{Software Design}
 The application core (the method of teaching) is based on the articles by Kovács et al. \cite{Kovacs14}, which use the premise of subtitles to advocate for a more playful and immersive learning method. This demonstrates the potential of such approaches for language learning and how more playful and intelligent approaches directly influence learning new words, as exemplified in Figure-\ref{fig:my_label}. \\
@@ -243,12 +258,158 @@ The work utilizes techniques used by El Batanony et al. in their article "A brow
 Using Spaced Repetition System (SRS) techniques to gamify learning new languages based on the premise that knowledge of keywords or the most repeated ones allows for text comprehension. \\
 Created using modern technologies, including JavaScript, Typescript, HTML, CSS, Prisma, Nextjs, PostgreSQL, and Web Channels. This work also utilizes the browser's internal messaging services to integrate the extension with streaming sites. The extension works with Prime Video, but the goal is to expand to other platforms like Netflix, Disney+, and others. \\
 The technologies were chosen based on the need to create a fast and efficient application with a good user experience and an excellent database to store user information and progression. Nextjs is a frontend and backend that has a big community and is very fast, having a good integration with Prisma, an ORM (Object-Relational Mapping) that is easy to use and has a good amount of users with PostgreSQL database. \\
+Another important point to consider use PostgreSQL is the existence of sites like Heroku, that provides a free database with a good amount of data and a good speed, and the existence of a good amount of users and a good amount of documentation. \\
 At this point in the prototype creation, an environment to learn a new language was built, including a browser extension, a site, and an app, all integrated and working together to provide a better experience. \\
 The diagram provided in Figure \ref{fig:database_diagram} illustrates the intricate structure of the database employed in this work. It meticulously outlines the relationships between various tables, providing a comprehensive overview of how user data and language information are organized and interconnected within the system. \\
 The Container diagram, depicted in Figure-\ref{fig:container_diagram}, offers a detailed visualization of the application's architecture, delineating the interactions between different components such as the extension, site, and app. This diagram showcases the technological framework utilized and elucidates how these components collaborate to facilitate seamless communication and functionality. \\
-The figure-\ref{fig:context_diagram} is a context diagram that was built to create this environment. Where we could see the core of the system using an IA provided by openAI, to generate translations, meanings, and games. Each one of the environments has its own functions and responsibilities. The extension is responsible for capturing the subtitles and opening the modal with the iframe, the site is responsible for storing the data and providing the games, and the app is responsible for showing the site inside the iframe and sending the user information to the site. \\
+The figure-\ref{fig:context_diagram} is a context diagram that was built to create this environment. Where we could see the core of the system using an AI provided by openAI, to generate translations, meanings, and games. Each one of the environments has its own functions and responsibilities. The extension is responsible for capturing the subtitles and opening the modal with the iframe, the site is responsible for storing the data and providing the games, and the app is responsible for showing the site inside the iframe and sending the user information to the site. \\
 To be more visible the process of the games and word data acquisition, the figure-\ref{fig:flow_diagram} illustrates it. This flow was selected with a focus on optimizing speed due to the substantial volume of data involved, along with the associated costs of utilizing AI. \\
 Presently, the AI of choice is the gpt-3.5-turbo-1106 model developed by OpenAI, incurring costs of \$0.0010 per 1K tokens of input and \$0.0020 per 1K tokens of output. Leveraging a database for storing data offers greater flexibility, particularly since the input remains constant. This approach ensures that when a user learns a word in a specific language and transitions to another, the necessary information about games and the word parameter are retrieved from the AI only once. 
+\newpage
+\subsection{Extract algorithm}
+The filter algorithm is a critical component of the application, as it is responsible for identifying and extracting words from subtitles. For each platform (e.g., Prime Video, Netflix, Disney+), the algorithm must be tailored to the specific structure of the subtitles. \\
+The algorithm is inserted into the extension and is responsible for capturing the subtitles and sending them to the site. \\
+But the result is the same for all platforms, a json structure with the following content:
+
+\begin{verbatim}
+{
+  words: {    
+    word: string;
+    count: number;
+    moments: {
+      begin: string;
+      end: string;
+      text: string;
+    }[];
+    position: number;
+    percentage: number;
+    total: number;
+  },
+  jsonFromTTML: {
+      lang: string,
+      version: string,
+      subtitles: {
+          moment: {
+              begin: string,
+              end: string,
+          },
+          text: string
+          word: string
+      }[]
+  }
+}
+\end{verbatim}
+The algorithm is based on the following steps:
+\begin{enumerate}
+  \item The algorithm receives the subtitle in TTML (or other) format.
+  \item The algorithm converts the subtitle to JSON format.
+  \item The algorithm processes the JSON to extract the words and their respective counts.
+  \item The algorithm processes the JSON to extract the phrases were the word exist.
+  \item The algorithm processes the JSON to determine the position and percentage (relative to how often the word appears in the subtitle) of each word.
+  \item The algorithm sends this data to a web channel where the site receives it.
+  \end{enumerate}
+The algorithm is designed to assynchrone, without damaging the user experience, as it must process a large volume of data. The algorithm is also designed to be flexible, as it must be tailored to the specific structure of the subtitles for each platform. \\
+\subsection{AI}
+  The AI is a critical component of the application, as it is responsible for providing translations, meanings, and games. The AI receive a prompt based on the user's request, and the AI returns the requested information. \\
+  A example of the prompt is: \\
+  \begin{verbatim}
+    I am a bot that generate quiz for you to learn new words.
+    My quiz is not very good at it, but I am learning.
+    Help me to learn by generating a quiz.
+
+    The quiz are a phrase using a word in the language and you 
+    need to translate to the target language.
+    The options are a list of words to choose the correct 
+    translation for the word in the target language. 
+    And the options are made by others translations on the 
+    target language or translation of similar words.
+    
+    Based on the following JSON structure:
+        {
+            words: string[], // the words in that language
+            language: string, // the language 
+            targetLanguage: string // the language target to 
+            translate
+        }
+    you need to answer in JSON format, following that structure:
+        {
+            [word]:{ // the word in the language
+                    quiz: string, // the quiz to translate the 
+                    word to the target language
+                    options: string[], // A list of options 
+                    to choose the correct translation for the 
+                    word in the target language
+                    correct: string, // the correct translation 
+                    for the word in the target language
+            }
+        }
+
+    For example, you receive the following JSON:
+        {
+            words: ['leaves'],
+            language: 'english', 
+            targetLanguage: 'portuguese'
+        }
+    And you need to generate a quiz for the word 'leaves' in 
+    english to portuguese:
+    {
+        "leaves": {
+            quiz: 'I love the color of the leaves in fall',
+            options: ['folhas', 'deixar', 'sair', 'deixar cair'],
+            correct: 'folhas'
+        }
+    } 
+
+    Following that example, you need to generate a quiz to 
+    those words based on that JSON:
+    {
+        words: ${JSON.stringify(words)},
+        language: ${JSON.stringify(language)}, // the language 
+        original of the words
+        targetLanguage: ${JSON.stringify(targetLanguage)} // the 
+        language target to translate
+    }
+  \end{verbatim}
+  Currently, the prompt is used to generate the quiz, but AI is employed also to generate translations and meanings of the words. Once the AI receives the prompt and returns the requested information, the backend processes and stores it in the database. Storing the quiz is crucial because each request to the AI incurs a cost, which is determined by the number of tokens used in the request. \\
+  If the approach were to manually create a database and quizzes, both the cost and time investment would significantly increase, leading to a deterioration in user experience. Given the large number of words required to generate a quiz, users would face a substantial learning curve in acquiring a new language.
+
+\subsection{The games}
+  The games are developed to transform the learning process singleton, it means that each word has the own line of learning and when appears on the user screen the user do something that answer if the user knows the word or not. \\
+  As choose three games to generate, the first one is a quiz, the second one is a word search, and the third one is a flashcard. \\
+  The quiz is show a phrase using a word in the language and the user need to choose a correct translation for the word in the target language. The options are made by the AI. \\
+  The word search is show a word in the language and the user need to find the correct translation for the word in the target language. The options are made by the AI. \\
+  The flashcard is show a word in the language and the user need to choose with he knows the word or not. \\
+  Those games are designed based on apps like anki and duolingo.
+\subsection{Learning algorithm}
+Based on SRS and the games generated by the information provided by the AI, as the games are design to transform the learning process singleton, when the API send informations about the word, the game will show based on priority specificated on the api. \\
+More priority, early the word will appear on the user screen, and the user will see the word more often. \\
+The api create a ranking of words and the priority of the word to appear on the user screen. The api ask three questions based on the data storaged: 
+\begin{enumerate}
+  \item Is today the day for learning?
+  \item How often does it repeat? 
+  \item Are there many errors?
+\end{enumerate}
+Following exactly those question the API creates a ranking and filter the words. \\
+
+\subsubsection{Is today the day for learning?}
+As the api use a SRS technique, the api needs to know if today is the day for learning the word. The approach choose was a exponential function, that is based on the number of times that the user saw the word and when the user do a mistake. The function is based on the following formula:
+\begin{equation}
+  \label{eq:1}
+  f(x, y) = 2^x 
+\end{equation}
+Is a simple equation, for example: if the user saw the word today and don't do a mistake, he will see the word again in 2 days, if the user continue without do a mistake, he will see the word again in 4 days, and so on. But if the user do a mistake, the function will be reseted and the user will see the word again in 1 day. \\
+That question filter the words that the user will see today. \\
+\subsubsection{How often does it repeat?}
+The api also know how common is this word (based on the entire database) and how commom this word is on subtitle. The api get the percentage of the word in the subtitle and the percentage of the word in the entire database, and based on that the api create a ranking of the words. \\
+Each of those information is 50\% of that ranking, and the api create a ranking based on that information. \\
+
+\subsubsection{Are there many errors?}
+The api also know how many errors the user do with that word, and how many errors the entire database do with that word. The api get the percentage of the word in the subtitle and the percentage of the word in the entire database, and based on that the api create a ranking of the words. \\
+As the previus step the api create a ranking based on that information, taking 50\% of database and 50\% of the user. \\
+
+
+
+
 \section{Results}
 A browser extension was developed that interacts with movie streaming sites and extracts the subtitles available on these sites. The extension uses Spaced Repetition System (SRS) techniques to gamify learning new languages based on the premise that knowledge of keywords or the most repeated ones allows for text comprehension. The goal is to expand to other platforms like Netflix, Disney+, and others. \\ 
 The site was also developed to provide statistics on user progress, including the most challenging words, the total words learned, and others to help the user understand their learning process. The site also supports multiple languages, which allows users to learn a wide range of languages using AI translations and the creation of games.  \\
