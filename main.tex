@@ -137,13 +137,13 @@ Based on the work's objectives and the methodology used, we identified the follo
 \item Testing and improvement of teaching logic.
 \item Integration of subtitle capture and teaching logic.
 \item Final testing of the extension.
-\item Review and correction of any issues identified in final testing.
+\item Review and correct any issues identified during final testing.
 \item Preparation of technical documentation for the script 
 \item Finalized script and teaching logic.
 \item Creation of the site's graphical interface.
 \item Creation of the app. 
 \item Graphic adaptation.
-\item Refactoring of the application and initiation of mini-games creation.
+\item Refactoring of the application and initiation of mini-game creation.
 \item Technical adjustments.
 \item Bug fixing and improvements.
 \item Final testing and delivery of the prototype.
@@ -152,10 +152,10 @@ Based on the work's objectives and the methodology used, we identified the follo
 
 \subsubsection{Approach to Goal Attainment}
 
-The development process for the extension, site, and app involves distinct steps to achieve the overarching goal. While some steps are common across all environments, each has its unique set of tasks to accomplish the goal. \\
+The extension, site, and app development process involves distinct steps to achieve the overarching goal. While some steps are common across all environments, each has its unique set of tasks to accomplish the goal. \\
 The development of the extension was based on the following requisites:  
 \begin{enumerate}
-\item Identification of streaming sites with available subtitles for movies.
+\item Identify streaming sites with available subtitles for movies.
 \item Development of a subtitle extraction tool.
 \item Integration of the extension with streaming sites.
 \item Create a script to show iframe with the application site.
@@ -191,18 +191,18 @@ The secondary difficulties were related to the development of the site and app, 
 Lastly, it is hard to create an excellent graphical interface that is responsive and fast, so that the user can understand and use it without any problems. The work's current focus is to make it easier to operate, but it lacks some visually appealing interfaces.
 
 
-\section{Theoretical Referencial}
+\section{Theoretical Referential}
 In recent years, there has been a growing interest in the use of subtitled videos as a way to assist in the learning of foreign languages. However, standard subtitles are not ideal for vocabulary acquisition, as translations are non-literal and are provided only for phrases, not individual words. \\
 To overcome this problem, "Smart Subtitles" have been developed, interactive subtitles focused on vocabulary acquisition. "Smart Subtitles" includes features such as vocabulary definitions when hovering over with the mouse cursor and video navigation based on dialogue \cite{Kovacs13}. Studies have shown that students learn more than double the vocabulary with "Smart Subtitles" compared to Chinese-English dual subtitles, with similar levels of comprehension and satisfaction \cite{Kovacs14}. \\ 
-Those dual subtitles are a common method for learning a new language, the user see two subtitles, one in the original language and another in the language that the user is learning, and the user needs to read both to understand the movie. \\
+Those dual subtitles are a common method for learning a new language, the user sees two subtitles, one in the original language and another in the language that the user is learning, and the user needs to read both to understand the movie. \\
 Another approach to assist in the learning of foreign languages is the use of browser extensions. The browser extension "InteractiveSubtitle" \cite{ElBatanony21} is an example of this. The extension features personalized learning, translation of phrases in context on web pages, and support for over 100 languages. The goal is to utilize various hypotheses of foreign language acquisition to create a new language learning tool that is more effective. \\ 
-Some students of languages doesn't adopt this method, but adopt methods as SRS, that is a technique tested and proved the effectiveness by Landauer and Bjork in 1978, that involves reviewing information at increasing intervals. This technique is used in apps like Anki, Duolingo, and others, and is a technique that is used to improve the user experience and learning outcomes. \\
+Some students of languages don't adopt this method but adopt methods such as SRS, which is a technique tested and proved effective by Landauer and Bjork in 1978, that involves reviewing information at increasing intervals. This technique is used in apps like Anki, Duolingo, and others, and is a technique that is used to improve the user experience and learning outcomes. \\
 Based on these ideas, an application has been proposed that utilizes a real kind of "Smart Subtitles" to train users through gamified practice before watching a subtitled movie in a language they are learning. The application also aims to include features such as interactive exercises to reinforce vocabulary acquisition and games to help users.  \\
 Also, to improve the user commodity, an app and a site were proposed to not necessarily use a computer to study, providing a way for the user to study on every device. 
 \subsection{Subtitles}
 Smart subtitles and dual subtitles have emerged as innovative solutions to enhance the multilingual viewing experience for audiences worldwide. These technologies leverage advancements in natural language processing and multimedia to provide seamless translation and accessibility options for viewers. \\
-Dual subtitles, offer a unique viewing experience by presenting multiple languages simultaneously on-screen. This method is particularly beneficial for language learners and bilingual audiences seeking to improve their language proficiency. The concept of dual subtitles has been explored by scholars such as Dr. François Yvon, who has investigated its effectiveness in language acquisition and comprehension.\\
-Smart subtitle technologies are integrated into streaming platforms and media players, allowing users to enable translation features with a simple toggle. Companies like fleex and Language Reactor have invested in smart subtitle solutions to cater to their diverse global audience. The implementation of dual subtitles often involves specialized software tools or custom video players capable of displaying multiple subtitle tracks simultaneously. \\
+Dual subtitles offer a unique viewing experience by presenting multiple languages simultaneously on-screen. This method is particularly beneficial for language learners and bilingual audiences seeking to improve their language proficiency. The concept of dual subtitles has been explored by scholars such as Dr. François Yvon, who has investigated its effectiveness in language acquisition and comprehension.\\
+Smart subtitle technologies are integrated into streaming platforms and media players, allowing users to enable translation features with a simple toggle. Companies like Fleex and Language Reactor have invested in smart subtitle solutions to cater to their diverse global audience. The implementation of dual subtitles often involves specialized software tools or custom video players capable of displaying multiple subtitle tracks simultaneously. \\
 Studies conducted by researchers such as Dr. Spela Vintar and Dr. Koen van Turnhout have demonstrated the effectiveness of smart subtitles and dual subtitles in improving language learning outcomes and comprehension rates. Their research highlights the potential of these technologies to bridge language barriers and promote cross-cultural understanding in multimedia contexts.\\
 Smart subtitles and dual subtitles represent significant advancements in the field of multimedia translation and accessibility. By leveraging cutting-edge technologies and insights from scholars like Alex Waibel, François Yvon, Spela Vintar, and Koen van Turnhout, these methods offer new possibilities for enhancing the multilingual viewing experience and promoting linguistic diversity in digital media.
 
@@ -258,18 +258,18 @@ The work utilizes techniques used by El Batanony et al. in their article "A brow
 Using Spaced Repetition System (SRS) techniques to gamify learning new languages based on the premise that knowledge of keywords or the most repeated ones allows for text comprehension. \\
 Created using modern technologies, including JavaScript, Typescript, HTML, CSS, Prisma, Nextjs, PostgreSQL, and Web Channels. This work also utilizes the browser's internal messaging services to integrate the extension with streaming sites. The extension works with Prime Video, but the goal is to expand to other platforms like Netflix, Disney+, and others. \\
 The technologies were chosen based on the need to create a fast and efficient application with a good user experience and an excellent database to store user information and progression. Nextjs is a frontend and backend that has a big community and is very fast, having a good integration with Prisma, an ORM (Object-Relational Mapping) that is easy to use and has a good amount of users with PostgreSQL database. \\
-Another important point to consider use PostgreSQL is the existence of sites like Heroku, that provides a free database with a good amount of data and a good speed, and the existence of a good amount of users and a good amount of documentation. \\
+Another important point to consider when using PostgreSQL is the existence of sites like Heroku, which provides a free database with a good amount of data and a good speed, and the existence of a good amount of users and documentation. \\
 At this point in the prototype creation, an environment to learn a new language was built, including a browser extension, a site, and an app, all integrated and working together to provide a better experience. \\
 The diagram provided in Figure \ref{fig:database_diagram} illustrates the intricate structure of the database employed in this work. It meticulously outlines the relationships between various tables, providing a comprehensive overview of how user data and language information are organized and interconnected within the system. \\
 The Container diagram, depicted in Figure-\ref{fig:container_diagram}, offers a detailed visualization of the application's architecture, delineating the interactions between different components such as the extension, site, and app. This diagram showcases the technological framework utilized and elucidates how these components collaborate to facilitate seamless communication and functionality. \\
 The figure-\ref{fig:context_diagram} is a context diagram that was built to create this environment. Where we could see the core of the system using an AI provided by openAI, to generate translations, meanings, and games. Each one of the environments has its own functions and responsibilities. The extension is responsible for capturing the subtitles and opening the modal with the iframe, the site is responsible for storing the data and providing the games, and the app is responsible for showing the site inside the iframe and sending the user information to the site. \\
 To be more visible the process of the games and word data acquisition, the figure-\ref{fig:flow_diagram} illustrates it. This flow was selected with a focus on optimizing speed due to the substantial volume of data involved, along with the associated costs of utilizing AI. \\
-Presently, the AI of choice is the gpt-3.5-turbo-1106 model developed by OpenAI, incurring costs of \$0.0010 per 1K tokens of input and \$0.0020 per 1K tokens of output. Leveraging a database for storing data offers greater flexibility, particularly since the input remains constant. This approach ensures that when a user learns a word in a specific language and transitions to another, the necessary information about games and the word parameter are retrieved from the AI only once. 
+Presently, the AI of choice is the gpt-3.5-turbo-0125 model developed by OpenAI, incurring costs of   input is \$0.50/1M tokens (the unit used in AI system) and output is  \$1.50 / 1M tokens. Leveraging a database for storing data offers greater flexibility, particularly since the input remains constant. This approach ensures that when a user learns a word in a specific language and transitions to another, the necessary information about games and the word parameter are retrieved from the AI only once. 
 \newpage
 \subsection{Extract algorithm}
 The filter algorithm is a critical component of the application, as it is responsible for identifying and extracting words from subtitles. For each platform (e.g., Prime Video, Netflix, Disney+), the algorithm must be tailored to the specific structure of the subtitles. \\
 The algorithm is inserted into the extension and is responsible for capturing the subtitles and sending them to the site. \\
-But the result is the same for all platforms, a json structure with the following content:
+But the result is the same for all platforms, a JSON structure with the following content:
 
 \begin{verbatim}
 {
@@ -304,20 +304,20 @@ The algorithm is based on the following steps:
   \item The algorithm receives the subtitle in TTML (or other) format.
   \item The algorithm converts the subtitle to JSON format.
   \item The algorithm processes the JSON to extract the words and their respective counts.
-  \item The algorithm processes the JSON to extract the phrases were the word exist.
+  \item The algorithm processes the JSON to extract the phrases where the word exists.
   \item The algorithm processes the JSON to determine the position and percentage (relative to how often the word appears in the subtitle) of each word.
   \item The algorithm sends this data to a web channel where the site receives it.
   \end{enumerate}
-The algorithm is designed to assynchrone, without damaging the user experience, as it must process a large volume of data. The algorithm is also designed to be flexible, as it must be tailored to the specific structure of the subtitles for each platform. \\
+The algorithm is designed to asynchrony, without damaging the user experience, as it must process a large volume of data. The algorithm is also designed to be flexible, as it must be tailored to the specific structure of the subtitles for each platform. \\
 \subsection{AI}
-  The AI is a critical component of the application, as it is responsible for providing translations, meanings, and games. The AI receive a prompt based on the user's request, and the AI returns the requested information. \\
-  A example of the prompt is: \\
+  The AI is a critical component of the application, as it is responsible for providing translations, meanings, and games. The AI receives a prompt based on the user's request, and the AI returns the requested information. \\
+  An example of the prompt is: \\
   \begin{verbatim}
-    I am a bot that generate quiz for you to learn new words.
+    I am a bot that generates quizzes for you to learn new words.
     My quiz is not very good at it, but I am learning.
     Help me to learn by generating a quiz.
 
-    The quiz are a phrase using a word in the language and you 
+    The quiz is a phrase using a word in the language and you 
     need to translate to the target language.
     The options are a list of words to choose the correct 
     translation for the word in the target language. 
@@ -374,38 +374,38 @@ The algorithm is designed to assynchrone, without damaging the user experience, 
   If the approach were to manually create a database and quizzes, both the cost and time investment would significantly increase, leading to a deterioration in user experience. Given the large number of words required to generate a quiz, users would face a substantial learning curve in acquiring a new language.
 
 \subsection{The games}
-  The games are developed to transform the learning process singleton, it means that each word has the own line of learning and when appears on the user screen the user do something that answer if the user knows the word or not. \\
-  As choose three games to generate, the first one is a quiz, the second one is a word search, and the third one is a flashcard. \\
-  The quiz is show a phrase using a word in the language and the user need to choose a correct translation for the word in the target language. The options are made by the AI. \\
-  The word search is show a word in the language and the user need to find the correct translation for the word in the target language. The options are made by the AI. \\
-  The flashcard is show a word in the language and the user need to choose with he knows the word or not. \\
-  Those games are designed based on apps like anki and duolingo.
+  The games are developed to transform the learning process singleton, which means that each word has its own line of learning and when appears on the user screen the user does something that answers if the user knows the word or not. \\
+  Choose three games to generate, the first one is a quiz, the second one is a word search, and the third one is a flashcard. \\
+  The quiz shows a phrase using a word in the language and the user needs to choose a correct translation for the word in the target language. The options are made by the AI. \\
+  The word search is about showing a word in the language and the user needs to find the correct translation for the word in the target language. The options are made by the AI. \\
+  The flashcard goal is  a word in the language and the user needs to choose whether he knows the word or not. \\
+  Those games are designed based on apps like Anki and Duolingo.
 \subsection{Learning algorithm}
-Based on SRS and the games generated by the information provided by the AI, as the games are design to transform the learning process singleton, when the API send informations about the word, the game will show based on priority specificated on the api. \\
-More priority, early the word will appear on the user screen, and the user will see the word more often. \\
-The api create a ranking of words and the priority of the word to appear on the user screen. The api ask three questions based on the data storaged: 
+Based on SRS and the games generated by the information provided by the AI, as the games are designed to transform the learning process singleton when the API sends information about the word, the game will show based on priority specificated on the API. \\
+More priority is that the word will appear on the user screen, and the user will see the word more often. \\
+The API creates a ranking of words and the priority of the word to appear on the user screen. The api sorts and filters the words based on three parameters: 
 \begin{enumerate}
   \item Is today the day for learning?
   \item How often does it repeat? 
-  \item Are there many errors?
+  \item Are there any errors?
 \end{enumerate}
-Following exactly those question the API creates a ranking and filter the words. \\
+Following exactly those questions the API creates a ranking and filters the words. \\
 
 \subsubsection{Is today the day for learning?}
-As the api use a SRS technique, the api needs to know if today is the day for learning the word. The approach choose was a exponential function, that is based on the number of times that the user saw the word and when the user do a mistake. The function is based on the following formula:
+As the API uses an SRS technique, the API needs to know if today is the day for learning the word. The approach chosen was an exponential function, that is based on the number of times that the user saw the word and when the user made a mistake. The function is based on the following formula:
 \begin{equation}
   \label{eq:1}
   f(x, y) = 2^x 
 \end{equation}
-Is a simple equation, for example: if the user saw the word today and don't do a mistake, he will see the word again in 2 days, if the user continue without do a mistake, he will see the word again in 4 days, and so on. But if the user do a mistake, the function will be reseted and the user will see the word again in 1 day. \\
-That question filter the words that the user will see today. \\
+Is a simple equation, for example: if the user sees the word today and doesn't make a mistake, he will see the word again in 2 days, if the user continues without making a mistake, he will see the word again in 4 days, and so on. But if the user makes a mistake, the function will be reset and the user will see the word again in 1 day. \\
+That question filters the words that the user will see today. \\
 \subsubsection{How often does it repeat?}
-The api also know how common is this word (based on the entire database) and how commom this word is on subtitle. The api get the percentage of the word in the subtitle and the percentage of the word in the entire database, and based on that the api create a ranking of the words. \\
-Each of those information is 50\% of that ranking, and the api create a ranking based on that information. \\
+The server also knows how common is this word (based on the entire database) and how common this word is on subtitles. The server gets the percentage of the word in the subtitle and the percentage of the word in the entire database, and based on that sort creates a ranking of the words. \\
+Each of that information is 50\% of that ranking, and the API creates a ranking based on that information. \\
 
-\subsubsection{Are there many errors?}
-The api also know how many errors the user do with that word, and how many errors the entire database do with that word. The api get the percentage of the word in the subtitle and the percentage of the word in the entire database, and based on that the api create a ranking of the words. \\
-As the previus step the api create a ranking based on that information, taking 50\% of database and 50\% of the user. \\
+\subsubsection{Are there any errors?}
+The API also knows how many errors the user makes with that word, and how many errors the entire database makes with that word. The API gets the percentage of the word in the subtitle and the percentage of the word in the entire database, and based on that the API creates a ranking of the words. \\
+As in the previous step, the API creates a ranking based on that information, taking 50\% of the database and 50\% of the user. \\
 
 
 
@@ -504,9 +504,8 @@ The module of the site has an interface that adjusts to the user's device. The s
     % \end{figure}
 \newpage
 \subsubsection{iframe to extension}
-      This module is used on modal when the users opens a movie on the streaming site. The user could interact with the application with 
-      inicial interface, equal of site in the figure-\ref{fig:site5}, but inside a iframe, where the user could select the gamer witch he wants to play. 
-      And those games are the Flashcard, Memory, and Quiz, as demonstrated in the figure-\ref{fig:iframe2}, figure-\ref{fig:iframe3}, and figure-\ref{fig:iframe4}.
+      This module is used on a modal when the users open a movie on the streaming site. The user could interact with the application with the initial interface, equal to the site in the figure-\ref{fig:site5}, but inside an iframe, where the user could select the gamer which he wants to play. 
+      Those games are the Flashcard, Memory, and Quiz, as demonstrated in figure-\ref{fig:iframe2}, figure-\ref{fig:iframe3}, and figure-\ref{fig:iframe4}.
       The entire playing process is inside the iframe, and the user can interact with the application without leaving the streaming site.
       
       
@@ -554,14 +553,14 @@ The module of the site has an interface that adjusts to the user's device. The s
     \end{figure}
 
 \subsubsection{iframe to app}
-This module is used by the app, but also used on the pop-up of the extension. This provide a small interface and resize components to adapte to that environment. Examples of ways to interact with the application with the following interfaces:
+This module is used by the app but also used on the pop-up of the extension. This provides a small interface and resizes components to adapt to that environment. Examples of ways to interact with the application with the following interfaces:
 \begin{itemize}
   \item Login Page: a screen to the user login as demonstrated in the figure-\ref{fig:app1}.
-  \item Home Page:  that screen provide a list of languages and movies as demonstrated in the figure-\ref{fig:app2}.
+  \item Home Page:  that screen provides a list of languages and movies as demonstrated in the figure-\ref{fig:app2}.
   \item Languages Page: this interface is where is listed all languages available to learn on the application as demonstrated in the figure-\ref{fig:app3}.
   \item Language by movie page: list all languages for each movie as demonstrated in the figure-\ref{fig:app4} and figure-\ref{fig:app5}.
-  \item Game Translate Page: A game where the user needs to inform the correct translation for a word in a specif phrase demonstrated in the figure-\ref{fig:app6}.
-  \item And the others games as the site and iframe extension. 
+  \item Game Translate Page: A game where the user needs to inform the correct translation for a word in a specific phrase demonstrated in the figure-\ref{fig:app6}.
+  \item And the other games as the site and iframe extension. 
   \end{itemize}
   
  \begin{figure}[!h]
@@ -627,7 +626,7 @@ This module is used by the app, but also used on the pop-up of the extension. Th
 For future improvements, there are subsections for each one and each environment (extension, site, app, backend, and AI) to improve the prototype. Because this work is a prototype, the goal is to improve the user experience and the learning process,  make the application more responsive and fast, create a better interface, improve the user experience, and reduce costs to maintain the application.
 
 \subsubsection{Extension}
-The extension needs to be some refactors to turn more responsible and fast, because the background service that takes the subtitles is slow and executes a cronjob to get the subtitles. Is necessary to study ways to do this using dispatch events and workers. \\
+The extension needs to be some refactors to turn more responsible and fast, because the background service that takes the subtitles is slow and executes a cron-job to get the subtitles. Is necessary to study ways to do this using dispatch events and workers. \\
 Currently, the repertoire of sites is so small that the extension could communicate, and restrict only to Prime video, but the goal is to expand to other platforms like Netflix, Disney+, and others. \\
 Also is important to create a WebSocket to extract pieces of information from the site, considering that some streaming uses another technology to show the subtitles. \\
 Considering that is possible to create communications between extensions or sites, a discussion about the possibility of integrating with other tools like Language Reactor, is viable.
